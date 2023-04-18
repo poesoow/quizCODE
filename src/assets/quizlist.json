@@ -1,0 +1,52 @@
+{
+  "QuizList": [
+    {
+      "id": 1,
+      "question": "HTML의 의미를 보기에서 고르세요!",
+      "answer": "Hyper Text Markup Language",
+      "view" : {
+        "number1": "Hyperlinks and Text Markup Language",
+        "number2": "Home Tool Markup Language",
+        "number3": "Hyper Text Markup Language",
+        "number4": "Hyperlinks Tool Markup Language"
+      },
+      "type": "html"
+    },
+    {
+      "id": 2,
+      "question": "태그요소 P의 display 속성을 고르세요!",
+      "answer": "block",
+      "view": {
+        "number1": "block",
+        "number2": "inline",
+        "number3": "inline-block",
+        "number4": "flex"
+      },
+      "type": "html"
+    },
+    {
+      "id": 3,
+      "question": "position의 기본값을 고르세요!",
+      "answer": "static",
+      "view": {
+        "number1": "fixed",
+        "number2": "relative",
+        "number3": "static",
+        "number4": "absolute"
+      },
+      "type": "css"
+    },
+    {
+      "id": 4,
+      "question": "이미지 태그에서 웹표준을 위해 반드시 작성하여야 하는 속성을 고르세요!",
+      "answer": "alt",
+      "view": {
+        "number1": "title",
+        "number2": "type",
+        "number3": "for",
+        "number4": "alt"
+      },
+      "type": "css"
+    }
+  ]
+}
