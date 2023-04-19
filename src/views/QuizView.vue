@@ -18,24 +18,24 @@
         <p class="text-base sm:text-xl">{{ dataList.QuizList[current].question }}</p>
         <ul class="mt-5 flex flex-wrap justify-between">
           <li 
-            @click="current++; SelectValue(quiz)"
-            v-for="(quiz, key, index) in dataList.QuizList[current].view" :key="key"
+            @click="current++; SelectValue(e); isHintUse = false"
+            v-for="(e, index) in randomView[current]" :key="index"
             class="cursor-pointer font-bold basis-full lg:basis-[49%] rounded-lg mb-3 border p-3 text-sm hover:border-blue-500 hover:text-blue-500 duration-500">
             <span>보기{{ index + 1 }}: </span>
-            <span class="break-all text-center">{{ quiz }}</span>
+            <span class="break-all text-center">{{ e[1] }}</span>
           </li>
         </ul>
         <div class="flex justify-between items-center flex-wrap">
           <button 
-            @click="hintcount--; hintshow()"
-            class="btn-primary bg-green-400 hover:bg-green-600 basis-4/12 sm:basis-2/12">힌트 : {{ hintcount }}</button>
-          <p v-if="ishint">{{ dataList.QuizList[current].hint }}</p>
-          {{ ishint }}
+            @click="useHint()"
+            class="btn-primary bg-green-400 hover:bg-green-600 basis-4/12 sm:basis-2/12">힌트 : {{ hintCount }}</button>
+          <p v-if="isHintUse">{{ dataList.QuizList[current].hint }}</p>
+          <p v-else-if="hintCount < 1">힌트를 모두 소진 하였습니다.</p>
         </div>
       <!-- 다음문제 이전문제 구현해보기
       <button @click="[current++]">다음문제</button> -->
       </div>
-      <div v-else>끝</div>
+      <div v-else>{{ hitNumber() }}개 맞음 {{ resultScore }}점</div>
     </div>
   </div>
 
@@ -60,8 +60,8 @@ export default defineComponent({
       1. 왜 타입 에러가 나는지 모를때 임시로 해결하기위해 사용하거나
       2. 내가 어떤 타입의 데이터가 들어올지 확실히 알고 있을 때 에러를 방지 하기 위해 사용
       */
-      hintcount: 2,
-      ishint: false,
+      hintCount : 3,
+      isHintUse: false,
     }
   },
   computed: {
@@ -70,19 +70,35 @@ export default defineComponent({
       // floor - 소수점 나머지를 내림
       // ceil - 올림
       // round - 반올림
+    },
+    resultScore() :number {
+      return Math.floor((this.hitNumber() / this.dataList.QuizList.length) * 100)
+    },
+    // 보기 랜덤하게
+    randomView() :Array<Array<[string, unknown]>> {
+      return this.dataList.QuizList.map((e, index)=>{
+        return Object.entries(this.dataList.QuizList[index].view).sort(()=> Math.random() - 0.5)
+      })
     }
   },
   methods: {
     SelectValue(e : string) {
       // console.log(e)
       // this.userSelect.push(e as string) // as 의 역할이 뭐지????
-      this.userSelect.push(e)
-      console.log(this.userSelect)
+      this.userSelect.push(e[1])
+      // console.log(this.userSelect)
     },
-    hintshow() {
-      if(!this.ishint) { // false 인 경우에만 동작하도록 해서 다시 여러번 클릭 하더라도 사라지지 않음
-        return this.ishint = !this.ishint
-      }
+    useHint() :void {
+      if(this.isHintUse){return} // 힌트를 클릭하여 true 상태이면 함수 실행 안되도록 함
+      if(this.hintCount < 1){return} // 누적힌트수가 1보다 작아지면 함수 실행 안되도록 함
+      this.hintCount--
+      // this.hintUse = this.hintUse === false ? true : false
+      this.isHintUse = true
+    },
+    hitNumber() :number {
+      return this.dataList.QuizList.filter((e, index)=>{
+        return e.answer === this.userSelect[index]
+      }).length
     }
   }
 })
