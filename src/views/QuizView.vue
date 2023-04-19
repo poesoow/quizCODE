@@ -75,14 +75,17 @@ export default defineComponent({
       return Math.floor((this.hitNumber() / this.dataList.QuizList.length) * 100)
     },
     // 보기 랜덤하게
-    randomView() :Array<Array<[string, unknown]>> {
+    // map 문으로 퀴즈별로 함수가 돌아감
+    // 퀴즈항목이 객체타입이라서 entries로 배열타입으로 변경시켜줌 
+    // 배열 매세드인 sort를 이용하여 정렬하는데 Math.random 메서드를 사용하여 랜덤하게 정렬시킴.
+    randomView() :Array<Array<string[]>> {
       return this.dataList.QuizList.map((e, index)=>{
         return Object.entries(this.dataList.QuizList[index].view).sort(()=> Math.random() - 0.5)
       })
     }
   },
   methods: {
-    SelectValue(e : string) {
+    SelectValue(e : string[]) {
       // console.log(e)
       // this.userSelect.push(e as string) // as 의 역할이 뭐지????
       this.userSelect.push(e[1])
