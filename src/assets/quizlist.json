@@ -10,7 +10,8 @@
         "number3": "Hyper Text Markup Language",
         "number4": "Hyperlinks Tool Markup Language"
       },
-      "type": "html"
+      "type": "html",
+      "hint": "첫번째"
     },
     {
       "id": 2,
@@ -22,7 +23,8 @@
         "number3": "inline-block",
         "number4": "flex"
       },
-      "type": "html"
+      "type": "html",
+      "hint": "두번째 힌트 내용"
     },
     {
       "id": 3,
@@ -34,7 +36,8 @@
         "number3": "static",
         "number4": "absolute"
       },
-      "type": "css"
+      "type": "css",
+      "hint": "세 번째 힌트: "
     },
     {
       "id": 4,
@@ -46,7 +49,8 @@
         "number3": "for",
         "number4": "alt"
       },
-      "type": "css"
+      "type": "css",
+      "hint": "힌트내용4"
     }
   ]
 }
