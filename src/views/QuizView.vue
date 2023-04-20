@@ -30,7 +30,7 @@
           <button 
             @click="useHint()"
             class="btn-primary bg-green-400 hover:bg-green-600 basis-4/12 sm:basis-2/12 text-sm">힌트 : {{ hintCount }}</button>
-          <p v-if="isHintUse">{{ dataList.QuizList[current].hint }}</p>
+          <p v-if="isHintUse">{{ selectQuestion[current].hint }}</p>
           <p v-else-if="hintCount < 1">힌트를 모두 소진 하였습니다.</p>
           <router-link to="/" class="btn-primary bg-green-400 hover:bg-green-600 basis-4/12 sm:basis-2/12 text-center text-sm">처음으로</router-link>
         </div>
@@ -60,7 +60,8 @@ interface QuizType {
     number3: string,
     number4: string,
   }
-  type: string
+  type: string,
+  hint: string
 }
 
 export default defineComponent({
