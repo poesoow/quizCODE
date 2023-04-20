@@ -11,7 +11,8 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/quiz',
     name: 'QuizView',
-    component: QuizView
+    component: QuizView,
+    props: route => ({userName: route.query.userName})
   }
 ]
 

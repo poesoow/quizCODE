@@ -51,7 +51,8 @@ export default defineComponent({
       }else{
         const route : RouteLocationRaw = {
           name : "QuizView",
-          replace: true // true 이전페이지 지우기(뒤로가기 비활성화)
+          query: {userName: this.userName}, // 홈뷰에서 이름 쓴걸로 라우터로 넘기기 위해
+          replace: false // true 이전페이지 지우기(뒤로가기 비활성화)
         }
          this.$router.push(route)
       }
