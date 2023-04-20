@@ -12,7 +12,12 @@ const routes: Array<RouteRecordRaw> = [
     path: '/quiz',
     name: 'QuizView',
     component: QuizView,
-    props: route => ({userName: route.query.userName})
+    props: route => ({
+      userName: route.query.userName,
+      selectRandom: route.query.selectRandom,
+      selectType: route.query.selectType,
+      selectCount: route.query.selectCount
+    })
   }
 ]
 

@@ -36,7 +36,7 @@
         "number3": "static",
         "number4": "absolute"
       },
-      "type": "css",
+      "type": "html",
       "hint": "세 번째 힌트: "
     },
     {
@@ -49,8 +49,73 @@
         "number3": "for",
         "number4": "alt"
       },
-      "type": "css",
+      "type": "html",
       "hint": "힌트내용4"
+    },
+    {
+      "id": 5,
+      "question": "CSS의 의미를 보기에서 고르세요",
+      "answer": "Cascading Style Sheets",
+      "view": {
+        "number1": "Cascading Style Sheets",
+        "number2": "Computer Style Sheets",
+        "number3": "Creative Style Sheets",
+        "number4": "Colorful Style Sheets"
+      },
+      "type": "css",
+      "hint": "폭포가 떨어지다"
+    },
+    {
+      "id": 6,
+      "question": "CSS를 활용해 배경색을 변경하고자 할때 올바른 속성은?",
+      "answer": "background-color",
+      "view": {
+        "number1": "background-color",
+        "number2": "backgrouncolor",
+        "number3": "bgcolor",
+        "number4": "color"
+      },
+      "type": "css",
+      "hint": "배경-색"
+    },
+    {
+      "id": 7,
+      "question": "HTML 내 자바스크립트 파일을 핑크해서 사용하고자 한다. 올바른 방법은?",
+      "answer": "<script src='script.js'>",
+      "view": {
+        "number1": "<script src='script.js'>",
+        "number2": "<script href='script.js'>",
+        "number3": "<script type='script.js'>",
+        "number4": "<script name='script.js'>"
+      },
+      "type": "js",
+      "hint": "소스"
+    },
+    {
+      "id": 8,
+      "question": "경고창을 띄우고자 한다. 올바른 함수는?",
+      "answer": "alert()",
+      "view": {
+        "number1": "alert()",
+        "number2": "msgBox()",
+        "number3": "msg()",
+        "number4": "alertBox()>"
+      },
+      "type": "js",
+      "hint": "알리다"
+    },
+    {
+      "id": 9,
+      "question": "콘솔창에 데이터를 확인하고자 한다 올바른 방법은?",
+      "answer": "console.log()",
+      "view": {
+        "number1": "console.log()",
+        "number2": "console.data()",
+        "number3": "console()",
+        "number4": "log()"
+      },
+      "type": "js",
+      "hint": "콘솔창에 로그를 남겨라"
     }
   ]
 }

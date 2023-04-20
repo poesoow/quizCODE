@@ -4,18 +4,19 @@
       <!-- 문제진행률(프로그레스 바) -->
       <div class="h-5 bg-gray-300 basis-full relative rounded-lg">
         <!-- 문제 진행 시 0/4 로 표현 문제종료시 숨기기 -->
-        <p v-if="current != dataList.QuizList.length" class="absolute right-2 -top-5 text-xs">{{ current + 1 }} / {{ dataList.QuizList.length }}</p>
+        <p v-if="current != Number(selectCount)" class="absolute right-2 -top-5 text-xs">{{ current + 1 }} / {{ selectCount }}</p>
         <p v-else class="absolute right-2 -top-5 text-xs">종료</p>
         <p class="absolute right-2 top-0.5 text-xs">{{ progress }}%</p>
         <!-- :style="{width: progress + '%'}" 이렇게 적을수도 있음 -->
         <div class="h-5 rounded-lg bg-blue-300 transition-all duration-500" :style="`width: ${progress}%`"></div>
       </div>
+      <h3 class="font-bold basis-full text-center text-indigo-500 text-xl sm:text-2xl lg:text-3xl mt-10 bg-white rounded-lg p-5">{{ userName }}<span class="text-black">님 반갑습니다.</span></h3>
       <!-- 문제영역 -->
       <div 
-        v-if="current < dataList.QuizList.length"
+        v-if="current < Number(selectCount)"
         class="bg-white rounded-lg my-10 p-10 basis-full">
         <div>{{ current + 1 }}번 문제</div>
-        <p class="text-base sm:text-xl">{{ dataList.QuizList[current].question }}</p>
+        <p class="text-base sm:text-xl">{{ selectQuestion[current].question }}</p>
         <ul class="mt-5 flex flex-wrap justify-between">
           <li 
             @click="current++; SelectValue(e); isHintUse = false"
@@ -28,14 +29,17 @@
         <div class="flex justify-between items-center flex-wrap">
           <button 
             @click="useHint()"
-            class="btn-primary bg-green-400 hover:bg-green-600 basis-4/12 sm:basis-2/12">힌트 : {{ hintCount }}</button>
+            class="btn-primary bg-green-400 hover:bg-green-600 basis-4/12 sm:basis-2/12 text-sm">힌트 : {{ hintCount }}</button>
           <p v-if="isHintUse">{{ dataList.QuizList[current].hint }}</p>
           <p v-else-if="hintCount < 1">힌트를 모두 소진 하였습니다.</p>
+          <router-link to="/" class="btn-primary bg-green-400 hover:bg-green-600 basis-4/12 sm:basis-2/12 text-center text-sm">처음으로</router-link>
         </div>
       <!-- 다음문제 이전문제 구현해보기
       <button @click="[current++]">다음문제</button> -->
       </div>
-      <div v-else>{{ hitNumber() }}개 맞음 {{ resultScore }}점</div>
+      <div v-else>{{ hitNumber() }}개 맞음 {{ resultScore }}점
+        <router-link to="/" class="btn-primary bg-green-400 hover:bg-green-600 basis-4/12 sm:basis-2/12 text-center text-sm">처음으로</router-link>
+      </div>
     </div>
   </div>
 
@@ -45,6 +49,19 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 import QuizList from '@/assets/quizlist.json';
+
+interface QuizType {
+  id: number,
+  question: string,
+  answer: string,
+  view: {
+    number1: string,
+    number2: string,
+    number3: string,
+    number4: string,
+  }
+  type: string
+}
 
 export default defineComponent({
   name: 'QuizView',
@@ -62,25 +79,39 @@ export default defineComponent({
       */
       hintCount : 3,
       isHintUse: false,
+      userName: this.$route.query.userName, // router 로 받은 유저이름
+      selectRandom: this.$route.query.selectRandom,
+      selectType: this.$route.query.selectType,
+      selectCount: this.$route.query.selectCount,
+      MaxCount: 0
     }
   },
   computed: {
     progress() :number {
-      return Math.floor((this.current / this.dataList.QuizList.length) * 100)
+      return Math.floor((this.current / Number(this.selectCount)) * 100)
       // floor - 소수점 나머지를 내림
       // ceil - 올림
       // round - 반올림
     },
     resultScore() :number {
-      return Math.floor((this.hitNumber() / this.dataList.QuizList.length) * 100)
+      return Math.floor((this.hitNumber() / Number(this.selectCount)) * 100)
     },
     // 보기 랜덤하게
     // map 문으로 퀴즈별로 함수가 돌아감
     // 퀴즈항목이 객체타입이라서 entries로 배열타입으로 변경시켜줌 
     // 배열 매세드인 sort를 이용하여 정렬하는데 Math.random 메서드를 사용하여 랜덤하게 정렬시킴.
-    randomView() :Array<Array<string[]>> {
-      return this.dataList.QuizList.map((e, index)=>{
-        return Object.entries(this.dataList.QuizList[index].view).sort(()=> Math.random() - 0.5)
+    randomView(): Array<Array<string[]>> {
+      return this.selectQuestion.map((e, index)=>{
+        return Object.entries(this.selectQuestion[index].view).sort(()=> Math.random() - 0.5)
+      })
+    },
+    selectQuestion() :QuizType[] {
+      return this.dataList.QuizList.filter((e) => {
+        if (this.selectType !== '전체') {
+          return e.type === this.selectType
+        } else {
+          return e.type
+        }
       })
     }
   },
@@ -99,11 +130,35 @@ export default defineComponent({
       this.isHintUse = true
     },
     hitNumber() :number {
-      return this.dataList.QuizList.filter((e, index)=>{
+      return this.selectQuestion.filter((e, index)=>{
         return e.answer === this.userSelect[index]
       }).length
+    },
+    questionCount() {
+      this.MaxCount = this.selectQuestion.filter((e) => {
+        if (this.selectType !== '전체') {
+          return e.type === this.selectType
+        } else {
+          return e.type
+        }
+      }).length
     }
-  }
+  },
+  created(){
+    if (Number(this.selectRandom) != 0) {
+      this.selectRandom = '1'
+    }
+    // 퀴즈 문제 랜덤
+    if(this.selectRandom === "1"){
+      this.dataList.QuizList.sort(()=>Math.random() - 0.5)
+    }
+    this.questionCount()
+    // 문항 수 임의로 늘릴수 없도록
+    if(Number(this.selectCount) > this.MaxCount) {
+      this.selectCount = this.MaxCount.toString();
+    }
+    
+  } 
 })
 </script>
 
