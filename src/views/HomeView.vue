@@ -10,22 +10,22 @@
       </form>
       <div class="w-full bg-white rounded-lg p-5 mt-5 flex justify-between items-center flex-wrap">
         <div class="flex justify-around flex-wrap items-center basis-full xl:basis-4/12">
-          <p class="btn-primary sm:text-sm text-xs bg-green-500 hover:bg-green-700 focus:ring-green-400 basis-5/12 text-center">랜덤설정</p>
-          <select v-model="selectRandom" class="border rounded basis-6/12 py-1 text-center">
+          <label for="random-select" class="btn-primary sm:text-sm text-xs bg-green-500 hover:bg-green-700 focus:ring-green-400 basis-5/12 text-center">랜덤설정</label>
+          <select id="random-select" v-model="selectRandom" class="border rounded basis-6/12 py-1 text-center">
             <option value="0">기본</option>
             <option value="1">랜덤</option>
           </select>
         </div>
         <div class="flex justify-around flex-wrap items-center basis-full xl:basis-4/12 my-5 xl:my-0">
-          <p class="btn-primary sm:text-sm text-xs bg-green-500 hover:bg-green-700 focus:ring-green-400 basis-5/12 text-center">문제유형</p>
-          <select @change="selectCount = cateList.length" v-model="selectType" class="border rounded basis-6/12 py-1 text-center">
+          <label for="type-select" class="btn-primary sm:text-sm text-xs bg-green-500 hover:bg-green-700 focus:ring-green-400 basis-5/12 text-center">문제유형</label>
+          <select id="type-select" @change="selectCount = cateList.length" v-model="selectType" class="border rounded basis-6/12 py-1 text-center">
             <option value="전체">전체</option>
             <option v-for="(e, index) in uniqueTypes" :key="index" :value="e"> {{ e.toUpperCase() }}</option>
           </select>
         </div>
         <div class="flex justify-around flex-wrap items-center basis-full xl:basis-4/12">
-          <p class="btn-primary sm:text-sm text-xs bg-green-500 hover:bg-green-700 focus:ring-green-400 basis-5/12 text-center">개수설정</p>
-          <select v-model="selectCount" class="border rounded basis-6/12 py-1 text-center">
+          <label for="count-select" class="btn-primary sm:text-sm text-xs bg-green-500 hover:bg-green-700 focus:ring-green-400 basis-5/12 text-center">개수설정</label>
+          <select id="count-select" v-model="selectCount" class="border rounded basis-6/12 py-1 text-center">
             <option v-for="e in cateList.length" :key="e" :value="e">{{ e }}문제</option>
           </select>
         </div>

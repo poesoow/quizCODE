@@ -10,7 +10,7 @@
         <!-- :style="{width: progress + '%'}" 이렇게 적을수도 있음 -->
         <div class="h-5 rounded-lg bg-blue-300 transition-all duration-500" :style="`width: ${progress}%`"></div>
       </div>
-      <h3 class="font-bold basis-full text-center text-indigo-500 text-xl sm:text-2xl lg:text-3xl mt-10 bg-white rounded-lg p-5">{{ userName }}<span class="text-black">님 반갑습니다.</span></h3>
+      <h3 class="font-bold basis-full text-center text-indigo-500 text-xl sm:text-2xl lg:text-3xl mt-10 bg-white rounded-lg p-5">{{ userName }}<span class="text-black">님 {{ current < Number(selectCount) ? '반갑습니다.' : '고생하셨습니다.'}}</span></h3>
       <!-- 문제영역 -->
       <div 
         v-if="current < Number(selectCount)"
