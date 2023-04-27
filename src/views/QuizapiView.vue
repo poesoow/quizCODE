@@ -1,36 +1,49 @@
 <template>
+  <div class="w-full flex justify-center items-center h-full">
+    {{ cateLists }}
+      <div class="mx-auto w-10/12 lg:w-6/12 flex flex-wrap items-center">
+        <form @submit.prevent>
+          <div class="w-full bg-white rounded-lg p-5 flex gap-x-5 flex-wrap justify-center">
+            <input v-model="userName" type="text" class="border pl-4 py-2 rounded-md shadow-md outline-none basis-full sm:basis-5/12">
+            <button class="btn-primary text-sm sm:text-base bg-blue-500 hover:bg-blue-700 focus:ring-blue-400 sm:py-0 basis-full sm:basis-3/12 mt-5 sm:mt-0">시작하기</button>
+            <div class=" mt-4 text-xs sm:text-sm font-bold"><span class="block mb-2">{{ "방문자" }}님 반갑습니다.</span> 문제 유형은 {{ true ? '기본값' : '랜덤' }}이고, {{ selectCate }}유형을 선택하였으며, 총 {{ 10 }}개의 문제 중 {{ selectLimit }}문제를 선택하였습니다.</div>
+          </div>
+        </form>
+        <div class="w-full bg-white rounded-lg p-5 mt-5 flex justify-between items-center flex-wrap">
+          <div class="flex justify-around flex-wrap items-center basis-full xl:basis-4/12">
+            <label for="random-select" class="btn-primary sm:text-sm text-xs bg-green-500 hover:bg-green-700 focus:ring-green-400 basis-5/12 text-center">랜덤설정</label>
+            <select id="random-select" class="border rounded basis-6/12 py-1 text-center">
+              <option value="0">기본</option>
+              <option value="1">랜덤</option>
+            </select>
+          </div>
+          <div class="flex justify-around flex-wrap items-center basis-full xl:basis-4/12 my-5 xl:my-0">
+            <label for="type-select" class="btn-primary sm:text-sm text-xs bg-green-500 hover:bg-green-700 focus:ring-green-400 basis-5/12 text-center">문제유형</label>
+            <select v-model="selectCate" id="type-select" class="border rounded basis-6/12 py-1 text-center">
+              <!-- <option v-for="(cate, index) in cateLists.sort()" :key="index" :value="cate"> {{ cate }}</option> -->
+            </select>
+          </div>
+          <div class="flex justify-around flex-wrap items-center basis-full xl:basis-4/12">
+            <label for="count-select" class="btn-primary sm:text-sm text-xs bg-green-500 hover:bg-green-700 focus:ring-green-400 basis-5/12 text-center">개수설정</label>
+            <select v-model="selectLimit" id="count-select" class="border rounded basis-6/12 py-1 text-center">
+              <option v-for="e in 20" :key="e" :value="e">{{ e }}문제</option>
+            </select>
+          </div>
+        </div>
+        <div class="error fixed bg-white left-1/2 top-[48%] -translate-x-1/2 -translate-y-1/2 z-50 border rounded-lg duration-700 transition-all w-3/4 sm:w-2/4 lg:w-1/6  opacity-0 invisible">
+          <h3 class="bg-gray-100 p-2 pl-4">필수</h3>
+          <p class="p-4 py-6">{{ "에러메세지" }}</p>
+        </div>
+      </div>
+    </div>
+
+
   <div>
-
-    최대 20개<br>
-    난이도는 상중하<br>
-    항상랜덤으로만 가능<br>
-    <br>
-    카테고리 다 나오는지 확인하고 스타일 작업 하기
-    <br>
-    선택 가능 항목 : 
-    개수, -> selectoption 말고 input range 형식으로 
-    난이도, 
-    카테고리
-    <br>
-    문제 영역으로 들어가서는 
-    새로시작하기 -> 새로 랜덤하게 생성
-    다시 풀어보기 -> 기존 문제 다시 풀어보기
-    지난 문제 다시 풀어보기 -> 문제들을 브라우저 local strorage 에 저장하여 지난 문제들도 다시 풀어볼 수 있도록 하기
-
-    맞은 개수, 점수 제공 + 틀린 문제 맞은 문제 시각적으로 보여주기
-
-
-
-    <br>
-
     <h2>{{ selectCate }}</h2>
     <h2>{{ selectDiffculty }}</h2>
     <h2>{{ selectLimit }}</h2>
-    {{ selectTags }}
     <hr>
-    <ul>
-      <li @click="selectCate = category" v-for="category in categoryList " :key="category">{{ category }}</li>
-    </ul>
+    
     <hr>
     <ul>
       <li @click="selectDiffculty = difficulty" v-for="difficulty in difficultyList" :key="difficulty">{{ difficulty }}</li>
@@ -40,63 +53,61 @@
 
 <script setup lang="ts">
 import axios from 'axios';
-import { ref, onMounted} from 'vue'
-
+// import { ref, onMounted, computed, ComputedRef } from 'vue'
+import { ref, onMounted } from 'vue'
 
 const base_url = 'https://quizapi.io/api/v1/questions'
-const appkey = 'cf5rtiNpfWzbQLR8koTel9nGLNlqWgit484Xt2o4'
-const corsherokuapp_url = 'https://cors-anywhere.herokuapp.com/'
+const appkey = 'TMjrFdFuQYVWxiY4mKRAttBF5OBJuaGXbJImn1AA'
+/* https://cors-anywhere.herokuapp.com/ */
+/* https://nyang-in.tistory.com/272 */
+/* https://cors.bridged.cc/ */
+const cors_url = 'https://proxy.cors.sh/'
 
-type categoryType = 'Linux' | 'DevOps' | 'Networking' | 'Programming' | 'Cloud' | 'Docker' | 'Kubernetes' | 'And lots more'
 type difficultyType = 'Easy' | 'Medium' | 'Hard'
 type limitType = number
 
-const categoryList: categoryType[] = ['Linux', 'DevOps', 'Networking', 'Programming', 'Cloud', 'Docker', 'Kubernetes',  'And lots more']
+
 const difficultyList :difficultyType[] = ['Easy', 'Medium', 'Hard']
 
-let selectCate = ref<categoryType | ''>('')
-let selectDiffculty = ref<difficultyType | ''>('')
-let selectLimit = ref<limitType>(20)
-let selectTags = ref<string>('')
+const selectCate = ref<string>('Code')
+const selectDiffculty = ref<difficultyType | ''>('')
+const selectLimit = ref<limitType>(20)
+// let selectTags = ref<string>('') // tag 는 사용 생각해보기
+const userName = ref<string>('')
 
+/* 임시작업용 */
+// import tempoList from '../assets/temporaryQuiz.json'
+// const quizsList = ref(tempoList)
 
-// ref 로 배열 선언 하는 방법 찾아보기
-
-
-
+// 문제유형 배열
+// const cateLists: ComputedRef<string[]> = computed(() => {
+//   return [...new Set(quizsList.value.map((list) => list.category))].map(category => category === '' ? '기타' : category)
+// })
 
 
 
 
 
 onMounted(() => {
-  // axios.post(`${base_url}/?apiKey=${appkey}&limit=10`)
-  //   .then((res) => {
-  //     console.log(res)
-  //   })
-  //   .catch((error) => {
-  //     console.log(error);
-  //   })
-  
-  /* 403 에러 떳는데... 시간이 지나서 된건가???? 왜... */
-  axios({
-  method: 'get',
-  url: `${corsherokuapp_url}${base_url}/?apiKey=${appkey}&limit=10&category=${categoryList[7]}&difficulty=easy&tags=Linux`,
-    }).then((res) => {
-      // console.log(res.data)
-      res.data.forEach(element => {
-        console.log(element.category)
-      });
-    })
+  /* &limit=20&category=${categoryList[7]}&difficulty=easy&tags=Linux */
+
+  axios.get(`${cors_url}${base_url}/?apiKey=${appkey}`, {
+    headers: {
+      'x-cors-api-key': 'temp_2425c259f56599af91548f4d77b54a8b',
+    }
+  }).then((res) => {
+    console.log(res)
+    //   const cateLists: ComputedRef<string[]> = computed(() => {
+    //   return [...new Set(res.data.map((list) => list.category))].map(category => category === '' ? '기타' : category)
+    // })
+  })
     .catch((error) => {
       console.log(error);
-  })
-
-
+    })
 })
 
+
+
+
+
 </script>
-
-<style scoped>
-
-</style>
