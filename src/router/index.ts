@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import QuizView from '../views/QuizView.vue'
+import QuizapiView from '../views/QuizapiView.vue'
+import TestView from '../views/TestView.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -18,7 +20,23 @@ const routes: Array<RouteRecordRaw> = [
       selectType: route.query.selectType,
       selectCount: route.query.selectCount
     })
-  }
+  },
+  {
+    path: '/quizapi',
+    name: 'QuizapiView',
+    component: QuizapiView
+  },
+  {
+    path: '/test',
+    name: 'TestView',
+    component: TestView,
+    props: route => ({
+      userName: route.query.userName,
+      selectDiffculty: route.query.selectDiffculty,
+      selectCate: route.query.selectCate,
+      selectLimit: route.query.selectLimit
+    })
+  },
 ]
 
 const router = createRouter({

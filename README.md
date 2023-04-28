@@ -44,3 +44,15 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 지난 문제 다시 풀어보기 -> 문제들을 브라우저 local strorage 에 저장하여 지난 문제들도 다시 풀어볼 수 있도록 하기
 
 맞은 개수, 점수 제공 + 틀린 문제 맞은 문제 시각적으로 보여주기
+
+### typescript 문제
+1. api axios로 가지고 온 data를 변수에 할당을 못하고 있음
+2. 로컬로 작업을 하려고 해도 타입지정을 어떻게 해줘야 할지 모르겠음
+
+### script setup 방식 문제
+
+https://router.vuejs.org/guide/advanced/composition-api.html
+https://www.reddit.com/r/vuejs/comments/qumhzq/composition_api_with_vuerouter_problem/
+https://github.com/vuejs/vue-router/issues/3760
+
+vue-router 가 script setup 방식에서는 작동이 되지 않음

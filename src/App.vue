@@ -1,14 +1,11 @@
 <template>
-  <!-- <router-view/> -->
-  <QuizapiView />
+  <router-view/>
 </template>
 
 <script lang="ts">
-import QuizapiView from '@/views/QuizapiView.vue'
 
 export default{
   components: {
-    QuizapiView
   }
 }
 </script>
