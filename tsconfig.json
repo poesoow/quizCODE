@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "downlevelIteration": true,
     "noImplicitReturns": true,
     "resolveJsonModule": true,
     "target": "es6",

@@ -28,7 +28,7 @@
           <div class="flex justify-around flex-wrap items-center basis-full xl:basis-4/12">
             <label for="difficulty-select" class="btn-primary sm:text-sm text-xs bg-green-500 hover:bg-green-700 focus:ring-green-400 basis-5/12 text-center">난이도</label>
             <select v-model="selectDiffculty" id="difficulty-select" class="border rounded basis-6/12 py-1 text-center">
-              <option v-for="(difficulty, index) in difficultyList.sort()" :key="index" :value="difficulty"> {{ difficulty }}</option>
+              <!-- <option v-for="(difficulty, index) in difficultyList.sort()" :key="index" :value="difficulty"> {{ difficulty }}</option> -->
             </select>
           </div>
           <div class="flex justify-around flex-wrap items-center basis-full xl:basis-4/12 my-5 xl:my-0">
@@ -59,10 +59,12 @@
     </div>
 </template>
 
-<script setup lang="ts">
+<script lang="ts">
+import { defineComponent } from 'vue'
+/* 임시작업용 */
+import tempoList from '../assets/temporaryQuiz.json'
+
 // import axios from 'axios';
-import { ref, computed, ComputedRef, watch } from 'vue'
-import { RouteLocationRaw, useRouter, useRoute, LocationQueryRaw  } from 'vue-router';
 
 // const base_url = 'https://quizapi.io/api/v1/questions'
 // const appkey = 'TMjrFdFuQYVWxiY4mKRAttBF5OBJuaGXbJImn1AA'
@@ -71,54 +73,73 @@ import { RouteLocationRaw, useRouter, useRoute, LocationQueryRaw  } from 'vue-ro
 // /* https://cors.bridged.cc/ */
 // const cors_url = 'https://proxy.cors.sh/'
 
-type difficultyType = 'Easy' | 'Medium' | 'Hard'
-type limitType = number
-
-//type QuizCount = number;
-
-const selectCate = ref<string>('Code')
-const selectDiffculty = ref<difficultyType>('Easy')
-const selectLimit = ref<limitType>(20)
-// let selectTags = ref<string>('') // tag 는 사용 생각해보기
-const userName = ref<string>('')
-
 /* 타입지정을 어떻게 해줘야 동작을 하는 것인지... axios로 데이터 받아올때 타입지정이 필요해서 꼭 로컬에서도 먼저 성공해야 할거 같은데... */
-// type QuizType = {
-//   id: number;
-//   question: string
-//   description? : null
-//   answers: {
-//     [key :string]: string,
-//   },
-//   category: string;
-//   correct_answer: string;
-//   correct_answers: { 
-//     [key: string]: string;
-//   }
-//   difficulty: string
-//   explanation?: null
-//   multiple_correct_answers: string
-//   tags?: [{name: string}]
-//   tip?: null
-// };
+type QuizType = {
+  id: number;
+  question: string;
+  description: undefined | null;
+  category: string;
+  answers: {
+    answer_a: string;
+    answer_b: string;
+    answer_c: string;
+    answer_d: string;
+    answer_e?: string;
+    answer_f?: string;
+  };
+  multiple_correct_answers: string;
+  difficulty: string;
+  }
 
-// type GetQuizsResponse = {
-//   data: QuizType[];
-// };
+  export default defineComponent({
+    name: 'QuizapiView',
+    data() {
+      return {
+        selectCate: 'Code',
+        selectDiffculty: 'Easy',
+        selectLimit: 20,
+        userName: '',
+        quizsList: [] as QuizType[],
+      }
+    },
+    computed: {
+      // 문제유형 배열
+      // 빈 값이 있어서 filter 한번 걸치고 map 문 적용
+      cateLists() : string[]{
+        return [...new Set(this.quizsList.filter((quiz : QuizType) => quiz && quiz.category).map((quiz : QuizType) => quiz.category))];
+      },
+      // },
+      // 문제난이도 배열
+      difficultyList() :string[] {
+        return [...new Set(this.quizsList.filter((quiz: QuizType) => quiz && quiz.difficulty).map((quiz: QuizType) => quiz.difficulty))]
+      },
+    },
+    methods: {
+      NameChk(){
+        if (!this.userName) {
+          /* document querSelector 말고 ref로 활용하는방법도 시도해보기 */
+          const errorEl = document.querySelector('.error')
 
-/* 임시작업용 */
-import tempoList from '../assets/temporaryQuiz.json'
-// const quizsList = ref<GetQuizsResponse>(tempoList)
-const quizsList = ref(tempoList)
+          errorEl?.classList.remove('invisible', 'opacity-0', 'top-[48%]')
+          errorEl?.classList.add('top-1/2', 'opacity-1')
+          setTimeout(() => {
+            errorEl?.classList.remove('top-1/2', 'opacity-1')
+            errorEl?.classList.add('invisible', 'opacity-0', 'top-[48%]')
+          }, 2500)
+        } else {
+          this.QuizStart();
+        }
+      },
+      QuizStart() {
+      console.log('퀴즈 스타트')
+      }
+    },
+    created(){
+      this.quizsList = tempoList.quizlists as QuizType[];
+    }
+  })
+  // let selectTags = ref<string>('') // tag 는 사용 생각해보기
 
-// 문제유형 배열
-const cateLists: ComputedRef<unknown[] | string[]>  = computed(() => {
-  return [...new Set(quizsList.value.map((list) => list.category))].map(category => category === '' ? '기타' : category)
-})
-// 문제난이도 배열
-const difficultyList: ComputedRef<unknown[] | string[]> = computed(() => {
-  return [...new Set(quizsList.value.map((list) => list.difficulty))]
-})
 
 
 // 퀴즈 api 호출로 변수에 저장해서 사용하기 시도 중
@@ -159,47 +180,4 @@ const difficultyList: ComputedRef<unknown[] | string[]> = computed(() => {
 //       }
 //     }
 //   }
-  
-  function NameChk() {
-    if (!userName.value) {
-      /* document querSelector 말고 ref로 활용하는방법도 시도해보기 */
-       const errorEl = document.querySelector('.error')
-
-      errorEl?.classList.remove('invisible', 'opacity-0', 'top-[48%]')
-      errorEl?.classList.add('top-1/2', 'opacity-1')
-      setTimeout(() => {
-        errorEl?.classList.remove('top-1/2', 'opacity-1')
-        errorEl?.classList.add('invisible', 'opacity-0', 'top-[48%]')
-      }, 2500)
-    } else {
-      QuizStart();
-    }    
-  }
-
-  function QuizStart(){
-    console.log('퀴즈 스타트')
-
-
-    const router = useRouter()
-    const route = useRoute()
-
-    function pushWithQuery(query: LocationQueryRaw | undefined) {
-      router.push({
-        name: 'QuizapiView',
-        query: {
-          ...route.query,
-          ...query,
-          // userName: userName,  // 홈뷰에서 이름 쓴걸로 라우터로 넘기기 위해
-          // selectDiffculty: selectDiffculty, // 랜덤인지 아닌지
-          // selectCate: selectCate, // 타입
-          // selectLimit: selectLimit // 문항 수
-        },
-      })
-    }
-  }
-
-
-
-
-
 </script>
