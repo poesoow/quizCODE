@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "noImplicitAny": false,
     "downlevelIteration": true,
     "noImplicitReturns": true,
     "resolveJsonModule": true,
