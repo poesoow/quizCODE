@@ -66,7 +66,7 @@ export default defineComponent({
       dataList: [] as Quiz[],
       selectRandom: '0',
       selectType: '전체',
-      selectCount: 9,
+      selectCount: 0,
     }
   },
   components: {

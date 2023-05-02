@@ -1922,6 +1922,1928 @@
       ],
       "category": "DevOps",
       "difficulty": "Easy"
+    },
+    {
+      "id": 124,
+      "question": "Who is making the Web standards?",
+      "description": null,
+      "answers": {
+        "answer_a": "The World Wide Web Consortium",
+        "answer_b": "Google",
+        "answer_c": "Mozilla",
+        "answer_d": "Microsoft",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "true",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "HTML"
+        }
+      ],
+      "category": "",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 446,
+      "question": "All HTML Tags must be enclosed In?",
+      "description": null,
+      "answers": {
+        "answer_a": "? And !",
+        "answer_b": "# And #",
+        "answer_c": "{ And }",
+        "answer_d": "< And >",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "true",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "HTML"
+        }
+      ],
+      "category": "Code",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 882,
+      "question": "How can you monitor Docker in production?",
+      "description": null,
+      "answers": {
+        "answer_a": "You can use Docker tools such as Docker pin and docker file for monitoring",
+        "answer_b": "You can use Docker tools such as Docker logs and docker plugins for monitoring",
+        "answer_c": "You can use Docker tools such as Docker events and docker stats for monitoring",
+        "answer_d": null,
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "false",
+        "answer_c_correct": "true",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "Docker"
+        }
+      ],
+      "category": "Docker",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 989,
+      "question": "How do you find the number with the highest value of x and y?",
+      "description": null,
+      "answers": {
+        "answer_a": "ceil(x, y)",
+        "answer_b": "Math.ceil(x, y)",
+        "answer_c": "Math.max(x, y)",
+        "answer_d": "top(x, y)",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "false",
+        "answer_c_correct": "true",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "JavaScript"
+        }
+      ],
+      "category": "Code",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 132,
+      "question": "How can you open a link in a new tab/browser window?",
+      "description": null,
+      "answers": {
+        "answer_a": "<a href=\"url\" target=\"new\">",
+        "answer_b": "<a href=\"url\" new>",
+        "answer_c": "<a href=\"url\" target=\"_blank\">",
+        "answer_d": "<a href=\"url\" target=\"new-tab\">",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "false",
+        "answer_c_correct": "true",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_c",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "HTML"
+        }
+      ],
+      "category": "",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 657,
+      "question": "Which command can give disk usage summary?",
+      "description": null,
+      "answers": {
+        "answer_a": "chkdsk",
+        "answer_b": "fdisk",
+        "answer_c": "du",
+        "answer_d": "df",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "false",
+        "answer_c_correct": "true",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "BASH"
+        }
+      ],
+      "category": "Linux",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 906,
+      "question": "The Service Type _____________ works only if your cluster is setup to work with a cloud provider.",
+      "description": null,
+      "answers": {
+        "answer_a": "ClusterIP",
+        "answer_b": "ExternalName",
+        "answer_c": "LoadBalancer",
+        "answer_d": "NodePort",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "false",
+        "answer_c_correct": "true",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": null,
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "Kubernetes"
+        }
+      ],
+      "category": "DevOps",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 1007,
+      "question": "On which of the following systems can minikube be installed on? Select one.",
+      "description": null,
+      "answers": {
+        "answer_a": "Linux",
+        "answer_b": "Windows",
+        "answer_c": "macOS",
+        "answer_d": "All of the mentioned",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "true",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": null,
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "Kubernetes"
+        }
+      ],
+      "category": "Docker",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 902,
+      "question": "To create a new deployment in kubernetes, use the command",
+      "description": null,
+      "answers": {
+        "answer_a": "kubernetes set deployment",
+        "answer_b": "kubernetes get deployment",
+        "answer_c": "kubectl run",
+        "answer_d": "kubectl deploy",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "false",
+        "answer_c_correct": "true",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": null,
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "Kubernetes"
+        }
+      ],
+      "category": "DevOps",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 319,
+      "question": "What can the Contributor role do?",
+      "description": null,
+      "answers": {
+        "answer_a": "Publish Posts",
+        "answer_b": "Edit Pages",
+        "answer_c": "Edit Posts",
+        "answer_d": "Moderate Comments",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "true",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "WordPress"
+        }
+      ],
+      "category": "CMS",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 125,
+      "question": "Choose the correct HTML element for the largest heading:",
+      "description": null,
+      "answers": {
+        "answer_a": "<heading>",
+        "answer_b": "<head>",
+        "answer_c": "<h1>",
+        "answer_d": "<h6>",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "false",
+        "answer_c_correct": "true",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_c",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "HTML"
+        }
+      ],
+      "category": "",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 687,
+      "question": "Which command can be used by the administrator to bring the system into single user mode?",
+      "description": null,
+      "answers": {
+        "answer_a": "init s",
+        "answer_b": "single",
+        "answer_c": "init",
+        "answer_d": "single s",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "true",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": null,
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "BASH"
+        },
+        {
+          "name": "Linux"
+        }
+      ],
+      "category": "Linux",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 89,
+      "question": "How to list only the running containers?",
+      "description": "To list running Docker containers, execute the following command: $ docker ps",
+      "answers": {
+        "answer_a": "docker list",
+        "answer_b": "docker ps",
+        "answer_c": "docker run",
+        "answer_d": "docker print",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "true",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "Docker"
+        }
+      ],
+      "category": "uncategorized",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 216,
+      "question": "Which is the right syntax for the DISTINCT SQL statement?",
+      "description": null,
+      "answers": {
+        "answer_a": "SELECT DIFFERENT col1, col2 FROM table;",
+        "answer_b": "SELECT DISTINCT col1, col2 WHERE table;",
+        "answer_c": "SELECT DISTINCT col1, col2 FROM table;",
+        "answer_d": null,
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "false",
+        "answer_c_correct": "true",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "MySQL"
+        }
+      ],
+      "category": "SQL",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 102,
+      "question": "In which variable is the users IP address stored?",
+      "description": null,
+      "answers": {
+        "answer_a": "$DOMAIN",
+        "answer_b": "$GLOBALS",
+        "answer_c": "$_ENV",
+        "answer_d": "$REMOTE_ADDR",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "true",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_d",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "PHP"
+        }
+      ],
+      "category": "",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 532,
+      "question": "There are ____ different heading tags in HTML",
+      "description": null,
+      "answers": {
+        "answer_a": "4",
+        "answer_b": "7",
+        "answer_c": "6",
+        "answer_d": "5",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "false",
+        "answer_c_correct": "true",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "HTML"
+        }
+      ],
+      "category": "Code",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 660,
+      "question": "What is the option to mention field separator for the command ‘cut’",
+      "description": null,
+      "answers": {
+        "answer_a": "-f",
+        "answer_b": "-c",
+        "answer_c": "-d",
+        "answer_d": "\\0",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "false",
+        "answer_c_correct": "true",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "BASH"
+        }
+      ],
+      "category": "Linux",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 16,
+      "question": "Which command is used to create new directory?",
+      "description": null,
+      "answers": {
+        "answer_a": "dir",
+        "answer_b": "newdir",
+        "answer_c": "mkdir",
+        "answer_d": "cdir",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "false",
+        "answer_c_correct": "true",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_c",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "Linux"
+        }
+      ],
+      "category": "Linux",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 361,
+      "question": "What will be the output of the following query INSERT INTO students (student name) VALUE ('James Lenon');",
+      "description": null,
+      "answers": {
+        "answer_a": "a student record with the name James Lenon will be added into the students table",
+        "answer_b": "the above query will generate an error message.",
+        "answer_c": null,
+        "answer_d": null,
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "true",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "MySQL"
+        }
+      ],
+      "category": "SQL",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 607,
+      "question": "Which cryptographic extension provides generation and verification of digital signatures?",
+      "description": null,
+      "answers": {
+        "answer_a": "PHP-CloseSSL",
+        "answer_b": "PHP-SSL",
+        "answer_c": "PHP-OpenSSL",
+        "answer_d": null,
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "false",
+        "answer_c_correct": "true",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "PHP"
+        }
+      ],
+      "category": "Code",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 757,
+      "question": "Which of the following is correct about constants?",
+      "description": null,
+      "answers": {
+        "answer_a": "To define a constant you have to use define() function.",
+        "answer_b": "To retrieve the value of a constant, you have to simply specify its name.",
+        "answer_c": "Both of the mentioned answers.",
+        "answer_d": "None of the mentioned answers.",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "false",
+        "answer_c_correct": "true",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": null,
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "PHP"
+        }
+      ],
+      "category": "Code",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 2,
+      "question": "How to list the contents of a folder?",
+      "description": "list the contents of a folder",
+      "answers": {
+        "answer_a": "pwd",
+        "answer_b": "ls",
+        "answer_c": "list",
+        "answer_d": "print",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "true",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_b",
+      "explanation": "ls lists the contents of the folder",
+      "tip": null,
+      "tags": [
+        {
+          "name": "Linux"
+        },
+        {
+          "name": "BASH"
+        }
+      ],
+      "category": "bash",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 573,
+      "question": "Which of the following is not true?",
+      "description": null,
+      "answers": {
+        "answer_a": "PHP can be used to develop web applications.",
+        "answer_b": "PHP can not be embedded into html.",
+        "answer_c": "PHP applications can not be compiled",
+        "answer_d": "PHP makes a website dynamic",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "true",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "PHP"
+        }
+      ],
+      "category": "Code",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 613,
+      "question": "How do we escape data before storing it in the database?",
+      "description": null,
+      "answers": {
+        "answer_a": "The addslashes function enables us to escape data before storage into the database.",
+        "answer_b": "The addstring function enables us to escape data before storage into the database.",
+        "answer_c": null,
+        "answer_d": null,
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "true",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "PHP"
+        }
+      ],
+      "category": "Code",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 132,
+      "question": "How can you open a link in a new tab/browser window?",
+      "description": null,
+      "answers": {
+        "answer_a": "<a href=\"url\" target=\"new\">",
+        "answer_b": "<a href=\"url\" new>",
+        "answer_c": "<a href=\"url\" target=\"_blank\">",
+        "answer_d": "<a href=\"url\" target=\"new-tab\">",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "false",
+        "answer_c_correct": "true",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_c",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "HTML"
+        }
+      ],
+      "category": "",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 439,
+      "question": "Function which causes retrieval of any kind of data from database is considered as",
+      "description": null,
+      "answers": {
+        "answer_a": "Interface or Signature",
+        "answer_b": "Logical signature",
+        "answer_c": "Conceptual signature",
+        "answer_d": "User friendly signature",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "true",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "MySQL"
+        }
+      ],
+      "category": "SQL",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 536,
+      "question": "HTML documents are saved in",
+      "description": null,
+      "answers": {
+        "answer_a": "Special binary format",
+        "answer_b": "Machine language codes",
+        "answer_c": "ASCII text",
+        "answer_d": "None of above",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "false",
+        "answer_c_correct": "true",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "HTML"
+        }
+      ],
+      "category": "Linux",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 95,
+      "question": "Which of the following gives a string containing PHP script file name in which it is called?",
+      "description": null,
+      "answers": {
+        "answer_a": "$php_errormsg",
+        "answer_b": "$_COOKIE",
+        "answer_c": "$_PHP_SELF",
+        "answer_d": "$_SESSION",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "false",
+        "answer_c_correct": "true",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_c",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "PHP"
+        }
+      ],
+      "category": "",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 916,
+      "question": "What are the responsibilities of Replication Controller?",
+      "description": null,
+      "answers": {
+        "answer_a": "Update or delete multiple pods with a single command",
+        "answer_b": "Helps to achieve the desired state",
+        "answer_c": "Creates a new pod, if the existing pod crashes",
+        "answer_d": "All of the mentioned",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "true",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": null,
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "Kubernetes"
+        }
+      ],
+      "category": "DevOps",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 103,
+      "question": "Can I generate DLL files from PHP scripts like i can in Perl ?",
+      "description": null,
+      "answers": {
+        "answer_a": "False",
+        "answer_b": "True",
+        "answer_c": null,
+        "answer_d": null,
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "PHP"
+        }
+      ],
+      "category": "",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 101,
+      "question": "Can you run several versions of PHP at the same time?",
+      "description": null,
+      "answers": {
+        "answer_a": "True",
+        "answer_b": "False",
+        "answer_c": null,
+        "answer_d": null,
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "true",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "PHP"
+        }
+      ],
+      "category": "",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 1,
+      "question": "How to delete a directory in Linux?",
+      "description": "The rmdir commands deletes only empty directories. To delete a folder recursively use the rm -rf command.",
+      "answers": {
+        "answer_a": "ls",
+        "answer_b": "delete",
+        "answer_c": "remove",
+        "answer_d": "rmdir",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "true",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_d",
+      "explanation": "rmdir deletes an empty directory",
+      "tip": null,
+      "tags": [],
+      "category": "Linux",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 19,
+      "question": "Crontab gives administrators the ability to do what?",
+      "description": null,
+      "answers": {
+        "answer_a": "Identify users on the system",
+        "answer_b": "Call up a list of open files",
+        "answer_c": "View the status of Linux kernel modules",
+        "answer_d": "Set up scheduled tasks on a system",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "true",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_d",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "Linux"
+        }
+      ],
+      "category": "Linux",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 673,
+      "question": "Which command can be used to make variables of shell to be made available to sub shell?",
+      "description": null,
+      "answers": {
+        "answer_a": "import",
+        "answer_b": "export",
+        "answer_c": "echo",
+        "answer_d": "set",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "true",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "BASH"
+        }
+      ],
+      "category": "Linux",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 569,
+      "question": "Which of the following function returns the number of characters in a string variable?",
+      "description": null,
+      "answers": {
+        "answer_a": "count($variable)",
+        "answer_b": "strlen($variable)",
+        "answer_c": "strcount($variable)",
+        "answer_d": "len($variable)",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "true",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "PHP"
+        }
+      ],
+      "category": "Code",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 651,
+      "question": "What is the option to create hard link for a directory?",
+      "description": null,
+      "answers": {
+        "answer_a": "-s",
+        "answer_b": "-l",
+        "answer_c": "-f",
+        "answer_d": "None of the above",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "true",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "BASH"
+        }
+      ],
+      "category": "Linux",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 784,
+      "question": "Which of the following is NOT a  valid mode fopen() mode :",
+      "description": null,
+      "answers": {
+        "answer_a": "r",
+        "answer_b": "r+",
+        "answer_c": "w",
+        "answer_d": "a",
+        "answer_e": "x",
+        "answer_f": "x+"
+      },
+      "multiple_correct_answers": "true",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "true",
+        "answer_f_correct": "true"
+      },
+      "correct_answer": null,
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "PHP"
+        }
+      ],
+      "category": "Code",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 918,
+      "question": "What did the 1.8 version of Kubernetes introduce?",
+      "description": null,
+      "answers": {
+        "answer_a": "Taints and Tolerations",
+        "answer_b": "Cluster level",
+        "answer_c": "Logging Secrets",
+        "answer_d": "Federated Clusters",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "true",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": null,
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "Kubernetes"
+        }
+      ],
+      "category": "DevOps",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 1064,
+      "question": "Which artisan command would you use to create a new Laravel Model?",
+      "description": null,
+      "answers": {
+        "answer_a": "php artisan create:model ModelName",
+        "answer_b": "php artisan model:make ModelName",
+        "answer_c": "php artisan model create ModelName",
+        "answer_d": "php artisan make:model ModelName",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "true",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "Laravel"
+        }
+      ],
+      "category": "Code",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 434,
+      "question": "Which of the following statements is NOT true for views in SQL?",
+      "description": null,
+      "answers": {
+        "answer_a": "Select statement used in the view definition cannot include ORDER BY clause.",
+        "answer_b": "A view contains a copy of the data",
+        "answer_c": "A view drives its data from the base tables(s)",
+        "answer_d": "A view is updatable if it has been defined from a single relation",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "true",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "MySQL"
+        }
+      ],
+      "category": "SQL",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 294,
+      "question": "What is a permalink?",
+      "description": null,
+      "answers": {
+        "answer_a": "A popular WordPress Plugin",
+        "answer_b": "The numeric IP address of your WordPress site",
+        "answer_c": "The complete URL of your WordPress site",
+        "answer_d": "Permalinks are the permanent URLs to your individual pages and blog posts, as well as your category and tag archives",
+        "answer_e": "A permalink is the web address used to link to your content.",
+        "answer_f": null
+      },
+      "multiple_correct_answers": "true",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "true",
+        "answer_e_correct": "true",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "WordPress"
+        }
+      ],
+      "category": "CMS",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 1079,
+      "question": "Which command do we need to execute to check the available repos in yum (CentOS)",
+      "description": null,
+      "answers": {
+        "answer_a": "yum repolist",
+        "answer_b": "yum listrepo",
+        "answer_c": "yum searchrepo",
+        "answer_d": "yum reposearch",
+        "answer_e": "yum reposhow",
+        "answer_f": "yum showrepo"
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "true",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": null,
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "Linux"
+        }
+      ],
+      "category": "Linux",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 541,
+      "question": "What is the use of Scalable Vector Graphics (SVG) in HTML5?",
+      "description": null,
+      "answers": {
+        "answer_a": "Scalable Vector Graphics (SVG) is the part of the vector-based family of graphics. There are various forms of Raster-based graphics available that stores the color definition for each pixel in an array of data.",
+        "answer_b": "Scalable Vector Graphics (SVG) is the part of the colored-based family of graphics. There are various forms of Raster-based graphics available that stores the design definition for each pixel in an array of data.",
+        "answer_c": null,
+        "answer_d": null,
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "true",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "HTML"
+        }
+      ],
+      "category": "Code",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 458,
+      "question": "Which оf the following class centers tabs/pills?",
+      "description": null,
+      "answers": {
+        "answer_a": ".nav-justified",
+        "answer_b": ".nav.navbar-nav",
+        "answer_c": ".nav Nav-pills",
+        "answer_d": ".nav-stacked",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "true",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "HTML"
+        }
+      ],
+      "category": "Code",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 873,
+      "question": "A Docker image provides a template for a container with all the necessary files of an application, but has no instructions to run it.",
+      "description": null,
+      "answers": {
+        "answer_a": "True",
+        "answer_b": "False",
+        "answer_c": null,
+        "answer_d": null,
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "true",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": null,
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "Docker"
+        }
+      ],
+      "category": "Docker",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 721,
+      "question": "Which command shows merged kubeconfig settings?",
+      "description": null,
+      "answers": {
+        "answer_a": "kubectl config view",
+        "answer_b": "kubectl config list",
+        "answer_c": "kubectl config show",
+        "answer_d": "kubectl config print",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "true",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "Kubernetes"
+        }
+      ],
+      "category": "Linux",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 1081,
+      "question": "Where are the online repositories configured on a Debian/Ubuntu Machine",
+      "description": null,
+      "answers": {
+        "answer_a": "/etc/apt/sources.list",
+        "answer_b": "/etc/apt/yum.repos",
+        "answer_c": "/etc/fstab",
+        "answer_d": "/etc/apt/repos",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "true",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": null,
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "Linux"
+        }
+      ],
+      "category": "Linux",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 837,
+      "question": "Docker Toolbox is an installer for quick setup and launch of a Docker environment on Mac and Windows systems. Select all of the Docker tools that come with the Docket Toolbox",
+      "description": null,
+      "answers": {
+        "answer_a": "Docker Machine for running docker-machine commands",
+        "answer_b": "Oracle VirtualBox",
+        "answer_c": "A shell pre-configured for a Docker command-line environment",
+        "answer_d": "Docker Compose for running the docker-compose commands",
+        "answer_e": "A shell post-configured for a Docker command-line environment",
+        "answer_f": "Oracle RealBox Containers"
+      },
+      "multiple_correct_answers": "true",
+      "correct_answers": {
+        "answer_a_correct": "true",
+        "answer_b_correct": "true",
+        "answer_c_correct": "true",
+        "answer_d_correct": "true",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "Docker"
+        }
+      ],
+      "category": "Docker",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 462,
+      "question": "Which of the following adds a checkmark Icon inside an Input?",
+      "description": null,
+      "answers": {
+        "answer_a": "Help-block",
+        "answer_b": "Has-warning",
+        "answer_c": "Has-feedback",
+        "answer_d": "Has-success",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "true",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "HTML"
+        }
+      ],
+      "category": "Code",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 175,
+      "question": "What is Docker Swarm?",
+      "description": null,
+      "answers": {
+        "answer_a": "Container orchestration tool",
+        "answer_b": "Container registry",
+        "answer_c": "Text document that contains all the commands",
+        "answer_d": null,
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "true",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "Docker"
+        }
+      ],
+      "category": "Docker",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 1060,
+      "question": "Which of the following are true for routes in Laravel?",
+      "description": null,
+      "answers": {
+        "answer_a": "You can not pass any arguments to your routes.",
+        "answer_b": "Routes can point to a method on a controller and also dictate which HTTP methods are able to hit that URI.",
+        "answer_c": "A route is an endpoint specified by a URI (Uniform Resource Identifier).",
+        "answer_d": "Routes can only handle GET requests",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "true",
+        "answer_c_correct": "true",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "Laravel"
+        }
+      ],
+      "category": "Code",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 132,
+      "question": "How can you open a link in a new tab/browser window?",
+      "description": null,
+      "answers": {
+        "answer_a": "<a href=\"url\" target=\"new\">",
+        "answer_b": "<a href=\"url\" new>",
+        "answer_c": "<a href=\"url\" target=\"_blank\">",
+        "answer_d": "<a href=\"url\" target=\"new-tab\">",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "false",
+        "answer_c_correct": "true",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_c",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "HTML"
+        }
+      ],
+      "category": "",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 767,
+      "question": "Which of the following method of Exception class returns source line?",
+      "description": null,
+      "answers": {
+        "answer_a": "getMessage()",
+        "answer_b": "getCode()",
+        "answer_c": "getFile()",
+        "answer_d": "getLine()",
+        "answer_e": "getSource()",
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "true",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": null,
+      "explanation": "getLine() method of Exception class returns source line.",
+      "tip": null,
+      "tags": [
+        {
+          "name": "PHP"
+        }
+      ],
+      "category": "Code",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 269,
+      "question": "How do you enable debug mode in WP?",
+      "description": null,
+      "answers": {
+        "answer_a": "You can enable debug mode in WP by editing wp-config.php file and changing WP_DEBUG constant value to true",
+        "answer_b": "You can enable debug mode in WP by editing wp-config.html file and changing WP_DEBUG constant value to true",
+        "answer_c": null,
+        "answer_d": null,
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "true",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "WordPress"
+        }
+      ],
+      "category": "CMS",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 555,
+      "question": "In which version of PHP E_STRICT Error level is introduced ?",
+      "description": null,
+      "answers": {
+        "answer_a": "PHP 4",
+        "answer_b": "PHP 7",
+        "answer_c": "PHP 5.2",
+        "answer_d": "PHP 5",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "true",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "PHP"
+        }
+      ],
+      "category": "Code",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 49,
+      "question": "Which of the following key combinations allows to terminate the current process in Linux shell?",
+      "description": null,
+      "answers": {
+        "answer_a": "Ctrl + C",
+        "answer_b": "Ctrl + Z",
+        "answer_c": "Ctrl + A",
+        "answer_d": "Ctrl + L",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "true",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "Linux"
+        }
+      ],
+      "category": "Linux",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 407,
+      "question": "Which of the following is available in MySQL:",
+      "description": null,
+      "answers": {
+        "answer_a": "CREATE VIEW",
+        "answer_b": "CREATE DATABASE",
+        "answer_c": "CREATE TRIGGER",
+        "answer_d": "CREATE SCHEMA",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "true",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "MySQL"
+        }
+      ],
+      "category": "SQL",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 453,
+      "question": "A simple text file which tells the browser what to cache Is known as a/an ________.",
+      "description": null,
+      "answers": {
+        "answer_a": "Input Files",
+        "answer_b": "HTML File",
+        "answer_c": "A Manifest File",
+        "answer_d": "Output Files",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "true",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "HTML"
+        }
+      ],
+      "category": "Code",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 715,
+      "question": "What language was Kubernetes written in?",
+      "description": null,
+      "answers": {
+        "answer_a": "Go",
+        "answer_b": "C++",
+        "answer_c": "Java",
+        "answer_d": "C",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "true",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": "The Kubernetes project is written in the Go programming language, and you can browse its source code on GitHub.",
+      "tip": null,
+      "tags": [
+        {
+          "name": "Kubernetes"
+        }
+      ],
+      "category": "Linux",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 922,
+      "question": "What is the role of kube-apiserver and kube-scheduler?",
+      "description": null,
+      "answers": {
+        "answer_a": "The kube – apiserver follows the scale-out architecture and, is the front-end of the master node control panel.",
+        "answer_b": "The kube – apiserver follows the scale-out architecture and, is the back-end of the master node control panel.",
+        "answer_c": null,
+        "answer_d": null,
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "true",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": null,
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "Kubernetes"
+        }
+      ],
+      "category": "DevOps",
+      "difficulty": "Medium"
     }
   ]
 }

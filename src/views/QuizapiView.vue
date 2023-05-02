@@ -21,28 +21,36 @@
               </span> 문제 난이도는
               <strong class="text-xl text-blue-800">{{ selectDiffculty }}</strong>이고,
               <strong class="text-xl text-blue-800">{{ selectCate }}</strong>유형을 선택하였으며, 총 {{ quizsList.length }}개의 문제 중
-              <strong class="text-xl text-blue-800">{{ selectLimit }}</strong>문제를 선택하였습니다.</div>
+              <strong class="text-xl text-blue-800">{{ selectLimit }}and {{ selectCount }}</strong>문제를 선택하였습니다.</div>
           </div>
         </form>
         <div class="w-full bg-white rounded-lg p-5 mt-5 flex justify-between items-center flex-wrap">
-          <div class="flex justify-around flex-wrap items-center basis-full xl:basis-4/12">
-            <label for="difficulty-select" class="btn-primary sm:text-sm text-xs bg-green-500 hover:bg-green-700 focus:ring-green-400 basis-5/12 text-center">난이도</label>
-            <select v-model="selectDiffculty" id="difficulty-select" class="border rounded basis-6/12 py-1 text-center">
+          <div class="flex justify-around flex-wrap items-center basis-full xl:basis-6/12 mb-5">
+            <label for="random-select" class="btn-primary sm:text-sm text-xs bg-green-500 hover:bg-green-700 focus:ring-green-400 basis-4/12 text-center">문제 순서</label>
+            <select v-model="selectRandom" id="random-select" class="border rounded basis-5/12 py-1 text-center">
+              <option value="0">기본</option>
+              <option value="1">랜덤</option>
+            </select>
+          </div>
+          <div class="flex justify-around flex-wrap items-center basis-full xl:basis-6/12 mb-5">
+            <label for="difficulty-select" class="btn-primary sm:text-sm text-xs bg-green-500 hover:bg-green-700 focus:ring-green-400 basis-4/12 text-center">난이도</label>
+            <select @change="selectCount = selectQuizs.length" v-model="selectDiffculty" id="difficulty-select" class="border rounded basis-5/12 py-1 text-center">
               <option v-for="(difficulty, index) in difficultyList.sort()" :key="index" :value="difficulty"> {{ difficulty }}</option>
             </select>
           </div>
-          <div class="flex justify-around flex-wrap items-center basis-full xl:basis-4/12 my-5 xl:my-0">
-            <label for="type-select" class="btn-primary sm:text-sm text-xs bg-green-500 hover:bg-green-700 focus:ring-green-400 basis-5/12 text-center">문제유형</label>
-            <select v-model="selectCate" id="type-select" class="border rounded basis-6/12 py-1 text-center">
+          <div class="flex justify-around flex-wrap items-center basis-full xl:basis-6/12 mb-5">
+            <label for="type-select" class="btn-primary sm:text-sm text-xs bg-green-500 hover:bg-green-700 focus:ring-green-400 basis-4/12 text-center">문제유형</label>
+            <select  @change="selectCount = selectQuizs.length" v-model="selectCate" id="type-select" class="border rounded basis-5/12 py-1 text-center">
               <option v-for="(cate, index) in cateLists.sort()" :key="index" :value="cate"> {{ cate }}</option>
             </select>
           </div>
-          <div class="flex justify-around flex-wrap items-center basis-full xl:basis-4/12">
-            <label for="count-select" class="btn-primary sm:text-sm text-xs bg-green-500 hover:bg-green-700 focus:ring-green-400 basis-5/12 text-center">개수설정</label>
-            <select v-model="selectLimit" id="count-select" class="border rounded basis-6/12 py-1 text-center">
-              <option v-for="e in 20" :key="e" :value="e">{{ e }}문제</option>
+          <div class="flex justify-around flex-wrap items-center basis-full xl:basis-6/12 mb-5">
+            <label for="count-select" class="btn-primary sm:text-sm text-xs bg-green-500 hover:bg-green-700 focus:ring-green-400 basis-4/12 text-center">개수설정</label>
+            <select v-model="selectCount" id="count-select" class="border rounded basis-5/12 py-1 text-center">
+              <option v-for="e in selectQuizs.length" :key="e" :value="e">{{ e }}문제</option>
             </select>
           </div>
+          {{ selectCount }}
         </div>
         <!-- -->
         <div
@@ -56,10 +64,17 @@
           </button>
         </div>
       </div>
-
-    </div>
-    <div v-for="(cate, key) in cateCount" :key="cate">
-      <div><span>{{ key }}</span>-{{ cate }}</div>
+      {{ filter }}
+      <div>
+        <ul>
+          <li v-for="(e, index) in selectQuizs" :key="index">
+            <div>{{ e.question }}</div>
+            <div>{{ e.category }}</div>
+            <div>{{ e.difficulty }}</div>
+            <br>
+          </li>
+        </ul>
+      </div>
     </div>
 </template>
 
@@ -100,7 +115,8 @@ interface QuizType {
       return {
         selectCate: 'Code',
         selectDiffculty: 'Easy',
-        selectLimit: 20,
+        selectRandom: '0',
+        selectCount: 0,
         userName: '',
         quizsList: [] as QuizType[]
       }
@@ -111,26 +127,51 @@ interface QuizType {
       cateLists() : string[]{
         return [...new Set(this.quizsList.filter((quiz : QuizType) => quiz && quiz.category).map((quiz : QuizType) => quiz.category))];
       },
-      // },
-      // 문제난이도 배열
-      difficultyList() :string[] {
-        return [...new Set(this.quizsList.filter((quiz: QuizType) => quiz && quiz.difficulty).map((quiz: QuizType) => quiz.difficulty))]
-      },
+      // 문제유형별 개수 객체
       cateCount(): { [key: string] : number }  {
         /* Indexable 타입 관련 문제 https://velog.io/@shin6403/Typescript-JS%EB%8A%94-%EC%A0%95%EB%A7%90-%EC%A2%8B%EC%9D%80-%EC%95%84%EC%9D%B4%EC%98%80%EA%B5%AC%EB%82%98feat.-Indexable */
         type IndexableList = string[]
-
+        
         const cates: IndexableList = Array.from(this.quizsList, (quiz) => (quiz.category))
         return cates.reduce((acc, cate) => {
           acc[cate] = (acc[cate] || 0) + 1
           return acc
         }, {})
+      },
+      // 문제난이도 배열
+      difficultyList() :string[] {
+        return [...new Set(this.quizsList.filter((quiz: QuizType) => quiz && quiz.difficulty).map((quiz: QuizType) => quiz.difficulty))]
+      },
+      // 필터로 사용
+      filter(): { [key: string]: string | number } {
+        return {
+          category : this.selectCate, 
+          difficulty: this.selectDiffculty,
+        }
+      },
+      // 선택한 문제들
+      selectQuizs(): QuizType[] {
+        return this.quizsList.filter((quiz)=>{
+          for (var key in this.filter) {
+            if (quiz[key] === undefined || quiz[key] != this.filter[key])
+              return false;
+          }
+          return true;
 
-        // return Array.from(this.quizsList, (quiz, index) => ({
-        //   cata: quiz.category,
-        //   count: index
-        // }))
+
+
+          // if(this.selectCate !== '전체' ){
+          //   return quiz.category === this.selectCate
+          // }else {
+          //   return quiz.category
+          // }
+        })
+      },
+      // 선택한 
+      selectLimit(): number {
+        return this.selectQuizs.length
       }
+
     },
     methods: {
       NameChk(){
@@ -150,14 +191,15 @@ interface QuizType {
       },
       QuizStart() {
       console.log('퀴즈 스타트')
+      console.log(this.selectQuizs)
       }
     },
     created(){
       // 임시용
       this.quizsList = tempoList.quizlists as QuizType[];
-
       // //   /* https://bobbyhadz.com/blog/typescript-http-request-axios */
-      // async function getQuizLists() {
+
+      // async function getQuizLists() :Promise<string | object> {
       //   try {
       //   const { data, status } = await axios.get<QuizType[]>(
       //     `${cors_url}${base_url}/?apiKey=${appkey}`,
@@ -186,11 +228,11 @@ interface QuizType {
 
 
       // // string | QuizType[] string 인 경우 때문에 아래코드가 안되는데 어떻게 해야하나...
-      // console.log(typeof getQuizLists())
-      // if(typeof getQuizLists() === "object"){
-      //   console.log(true)
+      // // console.log(typeof getQuizLists())
+      // // if(typeof getQuizLists() === "object"){
+      //   // console.log(true)
       //   this.quizsList = getQuizLists()
-      // }
+      // // }
 
     }
   })
