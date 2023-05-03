@@ -1,5 +1,6 @@
 <template>
   <div class="w-full flex items-center justify-center flex-wrap h-full">
+    {{ selectQuizs }}
     <div class="mx-auto w-10/12 lg:w-7/12 flex items-center flex-wrap">
       <!-- 문제진행률(프로그레스 바) -->
       <div class="h-5 bg-gray-300 basis-full relative rounded-lg">
@@ -29,11 +30,20 @@
   </div>
 
 </template>
-<!-- setup 으로 변경 필요.... -->
+
 <script lang="ts">
 import { defineComponent } from 'vue'
 
 export default defineComponent({
   name: 'TestView',
+  data() {
+    return {
+      userName: this.$route.query.userName,
+      selectDiffculty: this.$route.query.selectDiffculty,
+      selectCate: this.$route.query.selectCate,
+      selectLimit: this.$route.query.selectLimit,
+      selectQuizs: this.$route.query.selectQuizs
+    }
+  },
 })
 </script>

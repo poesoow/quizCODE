@@ -6,25 +6,26 @@ import TestView from '../views/TestView.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
-    path: '/',
+    path: '/training',
     name: 'home',
-    component: HomeView
+    component: HomeView,
   },
   {
-    path: '/quiz',
+    path: '/trainingquiz',
     name: 'QuizView',
     component: QuizView,
     props: route => ({
       userName: route.query.userName,
       selectRandom: route.query.selectRandom,
-      selectType: route.query.selectType,
-      selectCount: route.query.selectCount
+      selectCate: route.query.selectCate,
+      selectCount: route.query.selectCount,
     })
   },
+  // 스스로
   {
-    path: '/quizapi',
+    path: '/',
     name: 'QuizapiView',
-    component: QuizapiView
+    component: QuizapiView,
   },
   {
     path: '/test',
@@ -34,7 +35,8 @@ const routes: Array<RouteRecordRaw> = [
       userName: route.query.userName,
       selectDiffculty: route.query.selectDiffculty,
       selectCate: route.query.selectCate,
-      selectLimit: route.query.selectLimit
+      selectLimit: route.query.selectLimit,
+      selectQuizs: route.query.selectQuizs
     })
   },
 ]

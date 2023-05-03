@@ -41,7 +41,8 @@
           <div class="flex justify-around flex-wrap items-center basis-full xl:basis-6/12 mb-5">
             <label for="type-select" class="btn-primary sm:text-sm text-xs bg-green-500 hover:bg-green-700 focus:ring-green-400 basis-4/12 text-center">문제유형</label>
             <select  @change="selectCount = selectQuizs.length" v-model="selectCate" id="type-select" class="border rounded basis-5/12 py-1 text-center">
-              <option v-for="(cate, index) in cateLists.sort()" :key="index" :value="cate"> {{ cate }}</option>
+              <!-- <option v-for="(cate, index) in cateLists.sort()" :key="index" :value="cate"> {{ cate }}</option> -->
+              <option v-for="(count, key) in cateCount" :key="count" :value="key"> {{ key }}</option>
             </select>
           </div>
           <div class="flex justify-around flex-wrap items-center basis-full xl:basis-6/12 mb-5">
@@ -64,6 +65,7 @@
           </button>
         </div>
       </div>
+      {{ cateCount }}
       {{ filter }}
       <div>
         <ul>
@@ -82,6 +84,7 @@
 import { defineComponent } from 'vue'
 /* 임시작업용 */
 import tempoList from '../assets/temporaryQuiz.json'
+import { RouteLocationRaw } from 'vue-router';
 
 // import axios from 'axios';
 
@@ -116,8 +119,9 @@ interface QuizType {
         selectCate: 'Code',
         selectDiffculty: 'Easy',
         selectRandom: '0',
-        selectCount: 0,
+        selectCount: 10,
         userName: '',
+        selectQuizList: [],
         quizsList: [] as QuizType[]
       }
     },
@@ -157,17 +161,9 @@ interface QuizType {
               return false;
           }
           return true;
-
-
-
-          // if(this.selectCate !== '전체' ){
-          //   return quiz.category === this.selectCate
-          // }else {
-          //   return quiz.category
-          // }
         })
       },
-      // 선택한 
+      // 선택한 문항 수
       selectLimit(): number {
         return this.selectQuizs.length
       }
@@ -190,8 +186,21 @@ interface QuizType {
         }
       },
       QuizStart() {
-      console.log('퀴즈 스타트')
-      console.log(this.selectQuizs)
+        console.log(this.selectQuizs)
+
+        const route: RouteLocationRaw = {
+          name: "TestView",
+          query: {
+            userName: this.userName,  
+            selectDiffculty: this.selectDiffculty, 
+            selectCate: this.selectCate, 
+            selectLimit: this.selectLimit, 
+            // 문제리스트를 라우터 활용해서는 url 에 해당 내용이 전부 공개 되어서 vuex 활용하려고 함
+            // selectQuizs: JSON.stringify(this.selectQuizs)
+          },
+          replace: false // true 이전페이지 지우기(뒤로가기 비활성화)
+        } 
+        this.$router.push(route)
       }
     },
     created(){
