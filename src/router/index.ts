@@ -32,11 +32,12 @@ const routes: Array<RouteRecordRaw> = [
     name: 'TestView',
     component: TestView,
     props: route => ({
+      selectRandom: route.query.selectRandom,
       userName: route.query.userName,
       selectDiffculty: route.query.selectDiffculty,
       selectCate: route.query.selectCate,
-      selectLimit: route.query.selectLimit,
-      selectQuizs: route.query.selectQuizs
+      limitCount: route.query.limitCount,
+      selectCount: route.query.selectCount,
     })
   },
 ]
