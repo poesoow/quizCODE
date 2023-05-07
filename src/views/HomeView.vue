@@ -69,18 +69,9 @@
 import { defineComponent } from 'vue'
 import { useStore } from '@/store'
 
-/* 임시작업용 */
+/* 임시작업용 axios 시도는 다음번에 하기 */
 import tempoList from '../assets/temporaryQuiz.json'
 import { RouteLocationRaw } from 'vue-router';
-
-// import axios from 'axios';
-
-// const base_url = 'https://quizapi.io/api/v1/questions'
-// const appkey = 'TMjrFdFuQYVWxiY4mKRAttBF5OBJuaGXbJImn1AA'
-// /* https://cors-anywhere.herokuapp.com/ */
-// /* https://nyang-in.tistory.com/272 */
-// /* https://cors.bridged.cc/ */
-// const cors_url = 'https://proxy.cors.sh/'
 
 interface QuizType {
   id: number;
@@ -205,48 +196,6 @@ interface QuizType {
     created(){
       // 임시용
       this.quizsList = tempoList.quizlists as QuizType[];
-      // //   /* https://bobbyhadz.com/blog/typescript-http-request-axios */
-
-      // async function getQuizLists() :Promise<string | object> {
-      //   try {
-      //   const { data, status } = await axios.get<QuizType[]>(
-      //     `${cors_url}${base_url}/?apiKey=${appkey}`,
-      //     {
-      //       headers: {
-      //         Accept: 'application/json',
-      //         'x-cors-api-key': 'temp_2425c259f56599af91548f4d77b54a8b'
-      //       },
-      //     },
-      //   );
-      //   console.log(data)
-      //   // 👇️ "response status is: 200"
-      //   console.log('response status is: ', status);
-
-      //   return data;
-      // } catch (error) {
-      //   if (axios.isAxiosError(error)) {
-      //     console.log('error message: ', error.message);
-      //     return error.message;
-      //   } else {
-      //     console.log('unexpected error: ', error);
-      //     return 'An unexpected error occurred';
-      //   }
-      // }
-      // }
-
-
-      // // string | QuizType[] string 인 경우 때문에 아래코드가 안되는데 어떻게 해야하나...
-      // // console.log(typeof getQuizLists())
-      // // if(typeof getQuizLists() === "object"){
-      //   // console.log(true)
-      //   this.quizsList = getQuizLists()
-      // // }
-
     }
   })
-
-
-
-//   /* &limit=20&category=${categoryList[7]}&difficulty=easy&tags=Linux */
-
 </script>

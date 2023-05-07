@@ -3844,6 +3844,2575 @@
       ],
       "category": "DevOps",
       "difficulty": "Medium"
+    },
+    {
+      "id": 382,
+      "question": "The UNION command is used to combine result sets from more than one query into a single result set",
+      "description": null,
+      "answers": {
+        "answer_a": "True",
+        "answer_b": "False",
+        "answer_c": null,
+        "answer_d": null,
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "true",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "MySQL"
+        }
+      ],
+      "category": "SQL",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 356,
+      "question": "The WHERE clause is mandatory when using the SELECT command",
+      "description": null,
+      "answers": {
+        "answer_a": "True",
+        "answer_b": "False",
+        "answer_c": null,
+        "answer_d": null,
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "true",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "MySQL"
+        }
+      ],
+      "category": "SQL",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 932,
+      "question": "What is the role of cloud controller manager?",
+      "description": null,
+      "answers": {
+        "answer_a": "cloud controller manager is an essential component for persistent storage, the abstraction of cloud-specific code from core Kubernetes code, and network routing.",
+        "answer_b": "cloud controller manager is an essential component for local storage, the fraction of cloud-specific code from non core Kubernetes code, and network routing.",
+        "answer_c": null,
+        "answer_d": null,
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "true",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": null,
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "Kubernetes"
+        }
+      ],
+      "category": "DevOps",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 727,
+      "question": "How to get a pod's YAML in Kubernetes?",
+      "description": null,
+      "answers": {
+        "answer_a": "kubectl get pod my-pod --yaml",
+        "answer_b": "kubectl get pod my-pod -p yaml",
+        "answer_c": "kubectl get pod my-pod -f yaml",
+        "answer_d": "kubectl get pod my-pod -o yaml",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "true",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "Kubernetes"
+        }
+      ],
+      "category": "Linux",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 813,
+      "question": "How to build a Dockerfile?",
+      "description": null,
+      "answers": {
+        "answer_a": "$ docker build <path to docker file>",
+        "answer_b": "$ docker build to <path to docker file>",
+        "answer_c": "$ docker build in <path to docker file>",
+        "answer_d": null,
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "true",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "Docker"
+        }
+      ],
+      "category": "Docker",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 564,
+      "question": "Which one of the following property scopes is not supported by PHP?",
+      "description": null,
+      "answers": {
+        "answer_a": "public",
+        "answer_b": "static",
+        "answer_c": "friendly",
+        "answer_d": "final",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "false",
+        "answer_c_correct": "true",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "PHP"
+        }
+      ],
+      "category": "Code",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 593,
+      "question": "How can we get the error when there is a problem with uploading a file?",
+      "description": null,
+      "answers": {
+        "answer_a": "$FILES['userfile']['error']",
+        "answer_b": "$_FILES['userfile = error']",
+        "answer_c": "$_FILES['userfile']['error']",
+        "answer_d": null,
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "false",
+        "answer_c_correct": "true",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "PHP"
+        }
+      ],
+      "category": "Code",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 520,
+      "question": "Tags and test that are not directly displayed on the page are written in _____ section.",
+      "description": null,
+      "answers": {
+        "answer_a": "<html>",
+        "answer_b": "<body>",
+        "answer_c": "<title>",
+        "answer_d": "<head>",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "true",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "HTML"
+        }
+      ],
+      "category": "Code",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 832,
+      "question": "Which of the following is a tool for defining and running multi-container Docker applications.",
+      "description": null,
+      "answers": {
+        "answer_a": "Docker Swarn",
+        "answer_b": "Docker Cloud",
+        "answer_c": "Docker Hub",
+        "answer_d": "Docker Hub",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "true",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "Docker"
+        }
+      ],
+      "category": "Docker",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 864,
+      "question": "How to create a volume which docker container will use to store data.",
+      "description": null,
+      "answers": {
+        "answer_a": "$ docker --volume create",
+        "answer_b": "$ docker volume create",
+        "answer_c": "$ docker create volume",
+        "answer_d": null,
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "true",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "Docker"
+        }
+      ],
+      "category": "Docker",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 693,
+      "question": "What are the respective octal value for the permission bits?",
+      "description": null,
+      "answers": {
+        "answer_a": "4, 2 & 1 respectively for r, w & x.",
+        "answer_b": "4, 2 & 1 respectively for w, r & x.",
+        "answer_c": "4, 2 & 1 respectively for x, w & x.",
+        "answer_d": "4, 2 & 1 respectively for r, x & w.",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "true",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": null,
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "BASH"
+        },
+        {
+          "name": "Linux"
+        }
+      ],
+      "category": "Linux",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 750,
+      "question": "What is Minikube",
+      "description": null,
+      "answers": {
+        "answer_a": "Specification of a Kubernetes API object in JSON or YAML format",
+        "answer_b": "A pod object that a kubelet uses to represent a static pod",
+        "answer_c": "A tool for running Kubernetes locally",
+        "answer_d": "An abstraction used by Kubernetes to support multiple virtual clusters on the same physical cluster",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "false",
+        "answer_c_correct": "true",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "Kubernetes"
+        }
+      ],
+      "category": "Linux",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 277,
+      "question": "In WordPress, objects are passed by value or by reference.",
+      "description": null,
+      "answers": {
+        "answer_a": "In WordPress, all objects are passed by value.",
+        "answer_b": "In WordPress, all objects are passed by reference.",
+        "answer_c": null,
+        "answer_d": null,
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "true",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "WordPress"
+        }
+      ],
+      "category": "CMS",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 764,
+      "question": "Which of the following method can be used to create a MySql database using PHP?",
+      "description": null,
+      "answers": {
+        "answer_a": "mysql_connect()",
+        "answer_b": "mysql_query()",
+        "answer_c": "mysql_close()",
+        "answer_d": "None of the mentioned",
+        "answer_e": "mysql_create()",
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "true",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": null,
+      "explanation": "PHP uses mysql_query function to create a MySQL database.",
+      "tip": null,
+      "tags": [
+        {
+          "name": "PHP"
+        }
+      ],
+      "category": "Code",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 289,
+      "question": "How many types of plans are available in wordpress by default?",
+      "description": null,
+      "answers": {
+        "answer_a": "4",
+        "answer_b": "6",
+        "answer_c": "2",
+        "answer_d": "3",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "true",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "WordPress"
+        }
+      ],
+      "category": "CMS",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 819,
+      "question": "Can a Docker container restart by itself?",
+      "description": null,
+      "answers": {
+        "answer_a": "True",
+        "answer_b": "False",
+        "answer_c": null,
+        "answer_d": null,
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "true",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": null,
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "Docker"
+        }
+      ],
+      "category": "Docker",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 547,
+      "question": "What does the date_sunset() function returns",
+      "description": null,
+      "answers": {
+        "answer_a": "Returns the date of sunset for a given day \/ location",
+        "answer_b": "Returns the time of sunset for a given day \/ location",
+        "answer_c": null,
+        "answer_d": null,
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "true",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "PHP"
+        }
+      ],
+      "category": "Code",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 16,
+      "question": "Which command is used to create new directory?",
+      "description": null,
+      "answers": {
+        "answer_a": "dir",
+        "answer_b": "newdir",
+        "answer_c": "mkdir",
+        "answer_d": "cdir",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "false",
+        "answer_c_correct": "true",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_c",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "Linux"
+        }
+      ],
+      "category": "Linux",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 537,
+      "question": "Which tag creates a check box for a form in HTML?",
+      "description": null,
+      "answers": {
+        "answer_a": "<checkbox>",
+        "answer_b": "<input checkbox>",
+        "answer_c": "<input=checkbox>",
+        "answer_d": "<input type=\"checkbox\">",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "true",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "HTML"
+        }
+      ],
+      "category": "Code",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 469,
+      "question": "The __________ Element represents a span of text that is isolated from it's surroundings for the purposes of bidirectional text formatting",
+      "description": null,
+      "answers": {
+        "answer_a": "B",
+        "answer_b": "Base",
+        "answer_c": "Bdo",
+        "answer_d": "Bdi",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "true",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "HTML"
+        }
+      ],
+      "category": "Code",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 271,
+      "question": "What are the disadvantages of WordPress?",
+      "description": null,
+      "answers": {
+        "answer_a": "Only utilizes PHP",
+        "answer_b": "Use of multiple plugins can make the website heavy to load and slow",
+        "answer_c": "Modifying images and tables is difficult.",
+        "answer_d": "All of the mentioned.",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "true",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "WordPress"
+        }
+      ],
+      "category": "CMS",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 366,
+      "question": "The GROUP BY command cannot be used with aggregate functions together",
+      "description": null,
+      "answers": {
+        "answer_a": "True",
+        "answer_b": "False",
+        "answer_c": null,
+        "answer_d": null,
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "true",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "MySQL"
+        }
+      ],
+      "category": "SQL",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 350,
+      "question": "Normalizations is...",
+      "description": null,
+      "answers": {
+        "answer_a": "concerned with the physical implementation of the database",
+        "answer_b": "a database design technique that encourages storing data in multiple databases",
+        "answer_c": "a database design technique that eliminates relationships from a database",
+        "answer_d": "a database design technique used to minimize data redundancy and duplication",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "true",
+      "correct_answers": {
+        "answer_a_correct": "true",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "true",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "MySQL"
+        }
+      ],
+      "category": "SQL",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 184,
+      "question": "What is Wordpress?",
+      "description": null,
+      "answers": {
+        "answer_a": "WordPress is open source software you can use to create a beautiful website, blog, or app.",
+        "answer_b": "Wordpress is a social network just like Facebook and Twitter.",
+        "answer_c": "Wordpress is a HTML page builder you can use to create your static HTML pages.",
+        "answer_d": "Wordpress is a paid software you can use to create a beautiful website, blog, or app.",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "true",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": ".",
+      "tags": [
+        {
+          "name": "WordPress"
+        }
+      ],
+      "category": "CMS",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 825,
+      "question": "How to monitor Docker containers in production?",
+      "description": null,
+      "answers": {
+        "answer_a": "Docker provides functionalities like docker stats and docker events to monitor container in production.",
+        "answer_b": "Docker provides statistics like docker stats and docker events to monitor pages in production.",
+        "answer_c": "Docker provides functionalities like docker stats and docker events to monitor docker in production.",
+        "answer_d": null,
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "false",
+        "answer_c_correct": "true",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "Docker"
+        }
+      ],
+      "category": "Docker",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 20,
+      "question": "When looking for all the processes running on a Linux system, what command should you use?",
+      "description": null,
+      "answers": {
+        "answer_a": "service",
+        "answer_b": "oterm",
+        "answer_c": "ps",
+        "answer_d": "xrun",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "false",
+        "answer_c_correct": "true",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_c",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "Linux"
+        }
+      ],
+      "category": "Linux",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 453,
+      "question": "A simple text file which tells the browser what to cache Is known as a\/an ________.",
+      "description": null,
+      "answers": {
+        "answer_a": "Input Files",
+        "answer_b": "HTML File",
+        "answer_c": "A Manifest File",
+        "answer_d": "Output Files",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "true",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "HTML"
+        }
+      ],
+      "category": "Code",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 475,
+      "question": "How can you make A bulleted list with numbers?",
+      "description": null,
+      "answers": {
+        "answer_a": "<dl>",
+        "answer_b": "<ul>",
+        "answer_c": "<ol>",
+        "answer_d": "<list>",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "false",
+        "answer_c_correct": "true",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "HTML"
+        }
+      ],
+      "category": "Code",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 948,
+      "question": "Which command will you use to list all deployments?",
+      "description": null,
+      "answers": {
+        "answer_a": "kubectl get deploy",
+        "answer_b": "kubectl require deployments",
+        "answer_c": "kubectl get deployments",
+        "answer_d": null,
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "false",
+        "answer_c_correct": "true",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": null,
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "Kubernetes"
+        }
+      ],
+      "category": "Docker",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 482,
+      "question": "How can you create an E-mail link?",
+      "description": null,
+      "answers": {
+        "answer_a": "<a Href=\"a@b\">",
+        "answer_b": "<mail Href=\"a@b\">",
+        "answer_c": "<a Href=\"mailto:a@b.com\">",
+        "answer_d": "<mail>a@b<\/mail>",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "false",
+        "answer_c_correct": "true",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "HTML"
+        }
+      ],
+      "category": "Code",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 1071,
+      "question": "From which file does the command `free` takes it's information",
+      "description": null,
+      "answers": {
+        "answer_a": "\/proc\/meminfo",
+        "answer_b": "\/proc\/freemem",
+        "answer_c": "\/proc\/memfree",
+        "answer_d": "\/dev\/meminfo",
+        "answer_e": "\/dev\/freemem",
+        "answer_f": "\/dev\/memfree"
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "true",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": null,
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "Linux"
+        }
+      ],
+      "category": "Linux",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 375,
+      "question": "Once a table has been created in MySQL, its structure cannot be altered",
+      "description": null,
+      "answers": {
+        "answer_a": "True",
+        "answer_b": "False",
+        "answer_c": null,
+        "answer_d": null,
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "true",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "MySQL"
+        }
+      ],
+      "category": "SQL",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 232,
+      "question": "Which of the following statements are true about SQL injection attacks?",
+      "description": null,
+      "answers": {
+        "answer_a": "Wrapping all variables containing user input by a call to mysql_real_escape_string() makes the code immune to SQL injections.",
+        "answer_b": "Parametrized queries do not make code less vulnearable to SQL injections.",
+        "answer_c": "SQL injections are not possible, if only emulated prepared statements are used.",
+        "answer_d": "Usage of later versions of MySQL, validation, and explicit setting of the charset of user input are valid measures to decrease vulnerability to SQL injections.",
+        "answer_e": "None of the above",
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "true",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "MySQL"
+        }
+      ],
+      "category": "SQL",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 218,
+      "question": "Which SQL statement is used to return only different values?",
+      "description": null,
+      "answers": {
+        "answer_a": "DUPLICATE",
+        "answer_b": "DISTINCT",
+        "answer_c": "DIFFERENT",
+        "answer_d": "SELECT",
+        "answer_e": "None of the above",
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "true",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "MySQL"
+        }
+      ],
+      "category": "SQL",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 260,
+      "question": "What are meta-tags?",
+      "description": null,
+      "answers": {
+        "answer_a": "Meta-tags are keywords and description used to display website or page information.",
+        "answer_b": "Meta-tags are codes and scripts used to display website or page information.",
+        "answer_c": "Meta-tags are special tages and function used to display website or page information.",
+        "answer_d": null,
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "true",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "WordPress"
+        }
+      ],
+      "category": "CMS",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 846,
+      "question": "How to run the docker image mentioned in the command. Which will create a docker container in which the Apache HTTP server will run.",
+      "description": null,
+      "answers": {
+        "answer_a": "$ docker run -it -d httpd",
+        "answer_b": "$ docker run -it -d http img",
+        "answer_c": "$ docker run -it -d --httpd",
+        "answer_d": null,
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "true",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "Docker"
+        }
+      ],
+      "category": "Docker",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 896,
+      "question": "As soon a service starts, ________ daemon running on each node add a set of environment variables on the pod for each active service.",
+      "description": null,
+      "answers": {
+        "answer_a": "Kubectl",
+        "answer_b": "Service discovery",
+        "answer_c": "Kubeadm",
+        "answer_d": "Kubelet",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "true",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": null,
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "Kubernetes"
+        }
+      ],
+      "category": "DevOps",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 826,
+      "question": "Is it a good practice to run Docker compose in production?",
+      "description": null,
+      "answers": {
+        "answer_a": "True",
+        "answer_b": "False",
+        "answer_c": null,
+        "answer_d": null,
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "true",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": null,
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "Docker"
+        }
+      ],
+      "category": "Docker",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 760,
+      "question": "Which of the following function is used to read the content of a file?",
+      "description": null,
+      "answers": {
+        "answer_a": "fopen()",
+        "answer_b": "fread()",
+        "answer_c": "filesize()",
+        "answer_d": "file_exist()",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "true",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": null,
+      "explanation": "Once a file is opened using fopen() function it can be read with a function called fread(). This function requires two arguments. These must be the file pointer and the length of the file expressed in bytes.",
+      "tip": null,
+      "tags": [
+        {
+          "name": "PHP"
+        }
+      ],
+      "category": "Code",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 48,
+      "question": "Which of the answers listed below refers to a command used for invoking a text editor in Unix-like operating systems?",
+      "description": null,
+      "answers": {
+        "answer_a": "edit",
+        "answer_b": "notepad",
+        "answer_c": "vi",
+        "answer_d": "bcdedit",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "false",
+        "answer_c_correct": "true",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_c",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "Linux"
+        }
+      ],
+      "category": "Linux",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 955,
+      "question": "How to list all pods that are either labelled with env=development or with env=production",
+      "description": null,
+      "answers": {
+        "answer_a": "$ kubectl get pods -l 'env in (production, development)'",
+        "answer_b": "$ kubectl get pods 'env in (production, development)'",
+        "answer_c": null,
+        "answer_d": null,
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "true",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": null,
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "Kubernetes"
+        }
+      ],
+      "category": "DevOps",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 1062,
+      "question": "Which artisan command would you use to create a new Laravel Controller?",
+      "description": null,
+      "answers": {
+        "answer_a": "php artisan make:controller controller_name",
+        "answer_b": "php artisan create:controller controller_name",
+        "answer_c": "php artisan controller create controller_name",
+        "answer_d": "php artisan controller:make controller_name",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "true",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "Laravel"
+        }
+      ],
+      "category": "Code",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 54,
+      "question": "What are the types of links in Linux?",
+      "description": null,
+      "answers": {
+        "answer_a": "soft and hard links",
+        "answer_b": "open and close links",
+        "answer_c": "in-line and external links",
+        "answer_d": "links and highlights",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "true",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "Linux"
+        }
+      ],
+      "category": "Linux",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 774,
+      "question": "Which of the following is correct about NULL?",
+      "description": null,
+      "answers": {
+        "answer_a": "NULL is a special type that only has one value: NULL.",
+        "answer_b": "The special constant NULL is capitalized by convention, but actually it is case insensitive.",
+        "answer_c": "NULL is a special type that only has two values : NULL and NOT NULL",
+        "answer_d": "The special constant NULL is capitalized by convention and it should be defined as such as it's case sensitive. Meaning null is different than NULL",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "true",
+      "correct_answers": {
+        "answer_a_correct": "true",
+        "answer_b_correct": "true",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": null,
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "PHP"
+        }
+      ],
+      "category": "Code",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 524,
+      "question": "Which attribute is used with an img tag to display the text if image could not load in browser?",
+      "description": null,
+      "answers": {
+        "answer_a": "description",
+        "answer_b": "id",
+        "answer_c": "alt",
+        "answer_d": "name",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "false",
+        "answer_c_correct": "true",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "HTML"
+        }
+      ],
+      "category": "Code",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 758,
+      "question": "Which of the following function is used to get length of a string?",
+      "description": null,
+      "answers": {
+        "answer_a": "size()",
+        "answer_b": "strlen()",
+        "answer_c": "length",
+        "answer_d": "None of the above.",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "true",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": null,
+      "explanation": "The strlen() function is used to find the length of a string.",
+      "tip": null,
+      "tags": [
+        {
+          "name": "PHP"
+        }
+      ],
+      "category": "Code",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 907,
+      "question": "This volume type can be used to share contents within containers in a pod, but will not persist beyond the life of a pod.",
+      "description": null,
+      "answers": {
+        "answer_a": "EmptyDir",
+        "answer_b": "Local",
+        "answer_c": "ConfigMap",
+        "answer_d": "FlexVolume",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "true",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": null,
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "Kubernetes"
+        }
+      ],
+      "category": "DevOps",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 904,
+      "question": "Kube-apiserver on kubernetes master is designed to scale.",
+      "description": null,
+      "answers": {
+        "answer_a": "Vertically",
+        "answer_b": "Horizontally",
+        "answer_c": null,
+        "answer_d": null,
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "true",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": null,
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "Kubernetes"
+        }
+      ],
+      "category": "DevOps",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 349,
+      "question": "The database development lifecycle is very important to the successful implementation of a database system.",
+      "description": null,
+      "answers": {
+        "answer_a": "True",
+        "answer_b": "False",
+        "answer_c": null,
+        "answer_d": null,
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "true",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "MySQL"
+        }
+      ],
+      "category": "SQL",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 964,
+      "question": "What is a kube-proxy used for?",
+      "description": null,
+      "answers": {
+        "answer_a": "To supplant an authentic webpage in a search engine's index and search page results",
+        "answer_b": "To load-balance traffic that is destined for services to the correct backend pods",
+        "answer_c": null,
+        "answer_d": null,
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "true",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": null,
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "Kubernetes"
+        }
+      ],
+      "category": "DevOps",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 155,
+      "question": "Graphics defined by SVG is in which format?",
+      "description": null,
+      "answers": {
+        "answer_a": "CSS",
+        "answer_b": "XML",
+        "answer_c": "HTML",
+        "answer_d": "JSON",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "true",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_b",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "HTML"
+        }
+      ],
+      "category": "",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 315,
+      "question": "Which color is the official color of the Wordpress.org logo?",
+      "description": null,
+      "answers": {
+        "answer_a": "Yellow",
+        "answer_b": "Purple",
+        "answer_c": "Dark grey",
+        "answer_d": "White",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "false",
+        "answer_c_correct": "true",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "WordPress"
+        }
+      ],
+      "category": "CMS",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 619,
+      "question": "How can we access the data sent through the URL with the POST method?",
+      "description": null,
+      "answers": {
+        "answer_a": "$_POST[\"var\"];",
+        "answer_b": "$_REQUEST[\"var\"];",
+        "answer_c": "$_GET[\"var\"];",
+        "answer_d": "$_PUT[\"var\"];",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "true",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "PHP"
+        }
+      ],
+      "category": "Code",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 730,
+      "question": "How to list PersistentVolumes sorted by capacity in Kubernetes?",
+      "description": null,
+      "answers": {
+        "answer_a": "kubectl get pv --sort-by=.spec.capacity.volume",
+        "answer_b": "kubectl get pv --sort-by=.spec.capacity.storage",
+        "answer_c": "kubectl get pv --sort-by=.spec.capacity.memory",
+        "answer_d": "kubectl get pv --sort-by=.spec.capacity.space",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "true",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "Kubernetes"
+        }
+      ],
+      "category": "Linux",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 145,
+      "question": "Block elements are normally displayed without starting a new line.",
+      "description": null,
+      "answers": {
+        "answer_a": "True",
+        "answer_b": "False",
+        "answer_c": null,
+        "answer_d": null,
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "true",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_b",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "HTML"
+        }
+      ],
+      "category": "",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 772,
+      "question": "Which of the following method acts as a destructor function in a PHP class?",
+      "description": null,
+      "answers": {
+        "answer_a": "class_name()",
+        "answer_b": "__destruct",
+        "answer_c": "destructor",
+        "answer_d": "destructor()",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "true",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": null,
+      "explanation": "Like a constructor function you can define a destructor function using function __destruct(). You can release all the resourceses with-in a destructor.",
+      "tip": null,
+      "tags": [
+        {
+          "name": "PHP"
+        }
+      ],
+      "category": "Linux",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 622,
+      "question": "How can we determine the number of rows returned in the result set of a MySQL query?",
+      "description": null,
+      "answers": {
+        "answer_a": "The function mysqli_get_rows() returns the number of rows in a result set.",
+        "answer_b": "The function mysqli_num_rows() returns the number of rows in a result set.",
+        "answer_c": "The function mysqli_count_rows() returns the number of rows in a result set.",
+        "answer_d": null,
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "true",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "PHP"
+        }
+      ],
+      "category": "Code",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 895,
+      "question": "_______ manages the assigning nodes to pods depending on resource availability.",
+      "description": null,
+      "answers": {
+        "answer_a": "Etcd",
+        "answer_b": "Flanneld",
+        "answer_c": "Scheduler",
+        "answer_d": "Kubectl",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "false",
+        "answer_c_correct": "true",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": null,
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "Kubernetes"
+        }
+      ],
+      "category": "DevOps",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 101,
+      "question": "Can you run several versions of PHP at the same time?",
+      "description": null,
+      "answers": {
+        "answer_a": "True",
+        "answer_b": "False",
+        "answer_c": null,
+        "answer_d": null,
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "true",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "PHP"
+        }
+      ],
+      "category": "",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 680,
+      "question": "How can you display the top 10 number of lines of a file?",
+      "description": null,
+      "answers": {
+        "answer_a": "head \u2212n 10 file.txt",
+        "answer_b": "head -f 10 file.txt",
+        "answer_c": "head --display-only 10 file.txt",
+        "answer_d": "head -show 10 file.txt",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "true",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": null,
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "BASH"
+        },
+        {
+          "name": "Linux"
+        }
+      ],
+      "category": "Linux",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 570,
+      "question": "What does PHP Stands for?",
+      "description": null,
+      "answers": {
+        "answer_a": "PHP Hypertex Processor",
+        "answer_b": "PHP Hypertext Preprocessor",
+        "answer_c": "PHP Hyper Markup Preprocessor",
+        "answer_d": "PHP Hyper Markup Processor",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "true",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "true",
+        "answer_c_correct": "true",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "PHP"
+        }
+      ],
+      "category": "Code",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 257,
+      "question": "Which CMS powers around 35% of all websites on the internet?",
+      "description": null,
+      "answers": {
+        "answer_a": "WordPress",
+        "answer_b": "Dropal",
+        "answer_c": "Joomla",
+        "answer_d": "Laravel",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "true",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "WordPress"
+        }
+      ],
+      "category": "CMS",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 338,
+      "question": "What is the maximum size of a row in a MyISAM table?",
+      "description": null,
+      "answers": {
+        "answer_a": "No limit",
+        "answer_b": "OS specific",
+        "answer_c": "65534",
+        "answer_d": "128",
+        "answer_e": "2\u2019147\u2019483\u2019648",
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "false",
+        "answer_c_correct": "true",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "MySQL"
+        }
+      ],
+      "category": "SQL",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 337,
+      "question": "Which of the following is not a MySQL statement?",
+      "description": null,
+      "answers": {
+        "answer_a": "ENUMERATE",
+        "answer_b": "EXPLAIN",
+        "answer_c": "KILL",
+        "answer_d": "LOAD DATA",
+        "answer_e": "SET",
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "true",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "MySQL"
+        }
+      ],
+      "category": "SQL",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 740,
+      "question": "How to stream pod logs (stdout) in Kubernetes?",
+      "description": null,
+      "answers": {
+        "answer_a": "kubectl logs -f my-pod",
+        "answer_b": "kubectl pod -f my-pod",
+        "answer_c": "kubectl stream -f my-pod",
+        "answer_d": "kubectl logs my-pod",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "true",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "Kubernetes"
+        }
+      ],
+      "category": "Linux",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 336,
+      "question": "Which of the following is not a valid comparison operator?",
+      "description": null,
+      "answers": {
+        "answer_a": "==",
+        "answer_b": "<>",
+        "answer_c": "<=>",
+        "answer_d": "!=",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "true",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "MySQL"
+        }
+      ],
+      "category": "SQL",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 868,
+      "question": "You can't create multiple containers from the same image",
+      "description": null,
+      "answers": {
+        "answer_a": "True",
+        "answer_b": "False",
+        "answer_c": null,
+        "answer_d": null,
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "true",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": null,
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "Docker"
+        }
+      ],
+      "category": "Docker",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 453,
+      "question": "A simple text file which tells the browser what to cache Is known as a\/an ________.",
+      "description": null,
+      "answers": {
+        "answer_a": "Input Files",
+        "answer_b": "HTML File",
+        "answer_c": "A Manifest File",
+        "answer_d": "Output Files",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "true",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "HTML"
+        }
+      ],
+      "category": "Code",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 1005,
+      "question": "Which of the following are Kubernetes installation tools? Select all answers that apply.",
+      "description": null,
+      "answers": {
+        "answer_a": "kops",
+        "answer_b": "kubeadm",
+        "answer_c": "kubespray (formerly known as kargo)",
+        "answer_d": "None of the mentioned",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "true",
+      "correct_answers": {
+        "answer_a_correct": "true",
+        "answer_b_correct": "true",
+        "answer_c_correct": "true",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": null,
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "Kubernetes"
+        }
+      ],
+      "category": "DevOps",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 554,
+      "question": "How many error levels are available in PHP ?",
+      "description": null,
+      "answers": {
+        "answer_a": "20",
+        "answer_b": "16",
+        "answer_c": "19",
+        "answer_d": "4",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "true",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "PHP"
+        }
+      ],
+      "category": "Code",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 94,
+      "question": "Which of the following provides content type of the uploaded file in PHP?",
+      "description": null,
+      "answers": {
+        "answer_a": "$_FILES['file']['tmp_name']",
+        "answer_b": "$_FILES['file']['name']",
+        "answer_c": "$_FILES['file']['size']",
+        "answer_d": "$_FILES['file']['type']",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "true",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_d",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "PHP"
+        }
+      ],
+      "category": "",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 952,
+      "question": "What are the functions of Replication controller?",
+      "description": null,
+      "answers": {
+        "answer_a": "It is responsible to control and administer the lifecycle of the pod.",
+        "answer_b": "It helps the user to check the running status of the pod",
+        "answer_c": "It is responsible to monitor and verify whether the allowed number of pod replicas were running",
+        "answer_d": "It is responsible for routing the ingress traffic",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "true",
+      "correct_answers": {
+        "answer_a_correct": "true",
+        "answer_b_correct": "true",
+        "answer_c_correct": "true",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": null,
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "Kubernetes"
+        }
+      ],
+      "category": "DevOps",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 590,
+      "question": "How to protect special characters in a query string?",
+      "description": null,
+      "answers": {
+        "answer_a": "urlencode()",
+        "answer_b": "url_encode()",
+        "answer_c": "urlbypass()",
+        "answer_d": null,
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "true",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "PHP"
+        }
+      ],
+      "category": "Code",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 607,
+      "question": "Which cryptographic extension provides generation and verification of digital signatures?",
+      "description": null,
+      "answers": {
+        "answer_a": "PHP-CloseSSL",
+        "answer_b": "PHP-SSL",
+        "answer_c": "PHP-OpenSSL",
+        "answer_d": null,
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "false",
+        "answer_c_correct": "true",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "PHP"
+        }
+      ],
+      "category": "Code",
+      "difficulty": "Hard"
+    },
+    {
+      "id": 465,
+      "question": "Which of the following encoding an XML parser assumes ?",
+      "description": null,
+      "answers": {
+        "answer_a": "UTF-16",
+        "answer_b": "UTF-32",
+        "answer_c": "UTF-8",
+        "answer_d": "UTF-64",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "true",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "true",
+        "answer_c_correct": "true",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "HTML"
+        }
+      ],
+      "category": "Code",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 351,
+      "question": "What is a composite key?",
+      "description": null,
+      "answers": {
+        "answer_a": "its is a key that is defined as the primary key in another table",
+        "answer_b": "it is a key that uniquely identifies a record in a database",
+        "answer_c": "its is an optional key and allows null values",
+        "answer_d": "it is a primary key that consists of more than one field that uniquely identifies a record",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "true",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "MySQL"
+        }
+      ],
+      "category": "SQL",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 1068,
+      "question": "What will happen If you run the command \"init 6\" in your terminal",
+      "description": null,
+      "answers": {
+        "answer_a": "Reboot the system",
+        "answer_b": "Shut down the system",
+        "answer_c": "Enter single user mode",
+        "answer_d": "Start the system without a display manager (GUI)",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "true",
+        "answer_b_correct": "false",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": null,
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "Linux"
+        },
+        {
+          "name": "BASH"
+        }
+      ],
+      "category": "Linux",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 424,
+      "question": "DCL is used for _______?",
+      "description": null,
+      "answers": {
+        "answer_a": "Managing the changes made by DML statements",
+        "answer_b": "Inserting, Deleting and Updating data",
+        "answer_c": "Control access to data stored in a database",
+        "answer_d": "None of the above",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "true",
+        "answer_c_correct": "false",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_a",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "MySQL"
+        }
+      ],
+      "category": "SQL",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 91,
+      "question": "Which of the following variable is used to get user's browser and operating system details in PHP?",
+      "description": null,
+      "answers": {
+        "answer_a": "AGENT",
+        "answer_b": "USER",
+        "answer_c": "HTTP_USER_AGENT",
+        "answer_d": "None of the above.",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "false",
+        "answer_c_correct": "true",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_c",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "PHP"
+        }
+      ],
+      "category": "",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 82,
+      "question": "Which operator is used to check if two values are equal and of same data type?",
+      "description": null,
+      "answers": {
+        "answer_a": "==",
+        "answer_b": "=",
+        "answer_c": "===",
+        "answer_d": "!=",
+        "answer_e": null,
+        "answer_f": null
+      },
+      "multiple_correct_answers": "false",
+      "correct_answers": {
+        "answer_a_correct": "false",
+        "answer_b_correct": "false",
+        "answer_c_correct": "true",
+        "answer_d_correct": "false",
+        "answer_e_correct": "false",
+        "answer_f_correct": "false"
+      },
+      "correct_answer": "answer_c",
+      "explanation": null,
+      "tip": null,
+      "tags": [
+        {
+          "name": "PHP"
+        }
+      ],
+      "category": "",
+      "difficulty": "Medium"
     }
   ]
 }
