@@ -1,19 +1,19 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
+import TrainingView from '../views/TraningView.vue'
+import trainingQuizView from '../views/TrainingquizView.vue'
 import HomeView from '../views/HomeView.vue'
-import QuizView from '../views/QuizView.vue'
-import QuizapiView from '../views/QuizapiView.vue'
 import TestView from '../views/TestView.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/training',
-    name: 'home',
-    component: HomeView,
+    name: 'TrainingView',
+    component: TrainingView,
   },
   {
     path: '/trainingquiz',
-    name: 'QuizView',
-    component: QuizView,
+    name: 'TrainingquizView',
+    component: trainingQuizView,
     props: route => ({
       userName: route.query.userName,
       selectRandom: route.query.selectRandom,
@@ -21,11 +21,10 @@ const routes: Array<RouteRecordRaw> = [
       selectCount: route.query.selectCount,
     })
   },
-  // 스스로
   {
     path: '/',
-    name: 'QuizapiView',
-    component: QuizapiView,
+    name: 'HomeView',
+    component: HomeView,
   },
   {
     path: '/test',

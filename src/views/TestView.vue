@@ -1,8 +1,6 @@
 <template>
   <div class="w-full flex items-center justify-center flex-wrap h-full">
-    <div class="mx-auto w-10/12 lg:w-7/12 flex items-center flex-wrap">
-      <button @click="current = 0">다시 시작</button>
-      {{ current }} / {{ selectCount }}
+    <div class="mx-auto w-10/12 lg:w-7/12 flex items-center flex-wrap relative">
       <!-- 문제진행률(프로그레스 바) -->
       <div class="h-5 bg-gray-300 basis-full relative rounded-lg">
         <!-- 문제 진행 시 0/4 로 표현 문제종료시 숨기기 -->
@@ -86,6 +84,8 @@
           </div>
         </div>
       </div>
+      <!-- 문제 다시 풀기 -->
+      <button @click="restart()" class="btn-primary absolute right-1 bottom-1 text-sm sm:text-base bg-blue-500 hover:bg-blue-700 focus:ring-blue-400 sm:py-0 mt-5 sm:mt-0">다시 풀기</button>
     </div>
   </div>
 
@@ -93,6 +93,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
+import JSConfetti from 'js-confetti'
 
 interface QuizType {
   id: number;
@@ -114,6 +115,7 @@ interface QuizType {
 interface UserResult extends QuizType {
   selectValue?: string;
   result?: string | boolean;
+  no?: number;
 }
 
 export default defineComponent({
@@ -147,29 +149,34 @@ export default defineComponent({
     },
     // 사용자 선택항목을 넣기
     resultQuiz(): UserResult[] {
+      let i = 0
       return Array.from(this.selectQuizs, (quiz) => ({
         ...quiz,
         selectValue: '',
-        result: ''
+        result: '',
+        no: ++i,
       }))
     },
-
   },
   methods: {
     selectValue(value :string, key: string , index: number) :void {
       const correctAnswers = this.resultQuiz[index]['correct_answers']
+      // console.log(correctAnswers)
       this.resultQuiz[index].selectValue = value
       this.resultQuiz[index].result = correctAnswers[`${key}_correct`]
       // 굳이 안넣어도 되긴하는데...
       this.userSelects.push(value)
       // 다음문제를 위해서
       this.current++;
+      // 100점인경우에만
+      if (Number(this.resultScore()) == 100) {
+        const jsConfetti = new JSConfetti()
+        jsConfetti.addConfetti()
+      }
     },
     // 정답 개수
     correctCount(): number {
-      return this.resultQuiz.filter((quiz) => {
-        return quiz.result === "true"
-      }).length
+      return this.resultQuiz.filter((quiz) => quiz.result === "true").length
     },
     // 결과 점수 백점 만점
     resultScore(): number {
@@ -185,6 +192,16 @@ export default defineComponent({
       return this.resultQuiz.filter((quiz) => {
         return quiz.result == "false"
       })
+    },
+    restart() {
+      this.resultQuiz.forEach((requiz)=>{
+        requiz.result = ''
+        requiz.selectValue= ''
+        return requiz
+      })
+      this.isAnswerNote = false
+
+      this.current = 0
     }
   },
 })

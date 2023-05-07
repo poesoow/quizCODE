@@ -12,13 +12,13 @@
       </div>
       <h3 class="font-bold basis-full text-center text-indigo-500 text-xl sm:text-2xl lg:text-3xl mt-10 bg-white rounded-lg p-5">{{ userName }}<span class="text-black">님 {{ current < Number(selectCount) ? '반갑습니다.' : '고생하셨습니다.'}}</span></h3>
       <!-- 문제영역 -->
-      <div 
+      <div
         v-if="current < Number(selectCount)"
         class="bg-white rounded-lg my-10 p-10 basis-full">
         <div>{{ current + 1 }}번 문제</div>
         <p class="text-base sm:text-xl">{{ selectQuestion[current].question }}</p>
         <ul class="mt-5 flex flex-wrap justify-between">
-          <li 
+          <li
             @click="current++; SelectValue(e); isHintUse = false"
             v-for="(e, index) in randomView[current]" :key="index"
             class="cursor-pointer font-bold basis-full lg:basis-[49%] rounded-lg mb-3 border p-3 text-sm hover:border-blue-500 hover:text-blue-500 duration-500">
@@ -27,7 +27,7 @@
           </li>
         </ul>
         <div class="flex justify-between items-center flex-wrap">
-          <button 
+          <button
             @click="useHint()"
             class="btn-primary bg-green-400 hover:bg-green-600 basis-4/12 sm:basis-2/12 text-sm">힌트 : {{ hintCount }}</button>
           <p v-if="isHintUse">{{ selectQuestion[current].hint }}</p>
@@ -65,13 +65,13 @@ interface QuizType {
 }
 
 export default defineComponent({
-  name: 'QuizView',
+  name: 'trainingQuizView',
   data() {
     return {
       dataList: QuizList,
       current: 0,
       userSelect: [] as string[],
-      /* Type Assertion 변수명 as 변경할 타입 
+      /* Type Assertion 변수명 as 변경할 타입
       as 키워드는 유니온 타입 같은 복잡한 타입을 하나의 정확한 타입으로 줄일 때 사용
       단, 하나의 타입 일 때 사용시 에러 발생
       as 타입은 타입실드 임시해제용
@@ -99,7 +99,7 @@ export default defineComponent({
     },
     // 보기 랜덤하게
     // map 문으로 퀴즈별로 함수가 돌아감
-    // 퀴즈항목이 객체타입이라서 entries로 배열타입으로 변경시켜줌 
+    // 퀴즈항목이 객체타입이라서 entries로 배열타입으로 변경시켜줌
     // 배열 매세드인 sort를 이용하여 정렬하는데 Math.random 메서드를 사용하여 랜덤하게 정렬시킴.
     randomView(): Array<Array<string[]>> {
       return this.selectQuestion.map((e, index)=>{
@@ -158,8 +158,8 @@ export default defineComponent({
     if(Number(this.selectCount) > this.MaxCount) {
       this.selectCount = this.MaxCount.toString();
     }
-    
-  } 
+
+  }
 })
 </script>
 
