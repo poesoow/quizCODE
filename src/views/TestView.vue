@@ -52,8 +52,8 @@
             <p>정답개수 : {{ correctCount() }}개 {{ resultScore() }}점</p>
             <button
               @click="OpenAnswernote"
-              v-if="isAnswerNote === false"
-              class="text-base">틀린문향 확인하기</button>
+              v-if="isAnswerNote === false && Number(resultScore()) !== 100"
+              class="text-base">틀린문항 확인하기</button>
           </div>
           <div
             v-if="isAnswerNote === true"
